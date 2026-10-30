@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/reg_write.dir/reg_write.s.o -o reg_write

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/reg_read.dir/reg_read.s.o -o reg_read

@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/pedrofb/Desktop/Cs/CPP/sdb/build/cmake_install.cmake",
+		"/home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src/cmake_install.cmake",
+		"/home/pedrofb/Desktop/Cs/CPP/sdb/build/application/cmake_install.cmake",
+		"/home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation/cmake_install.cmake",
+		"/home/pedrofb/Desktop/Cs/CPP/sdb/build/test/cmake_install.cmake",
+		"/home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsdb_cli.a CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o
+/usr/bin/ranlib libsdb_cli.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsdb.a CMakeFiles/libsdb.dir/process.cpp.o CMakeFiles/libsdb.dir/pipe.cpp.o CMakeFiles/libsdb.dir/registers.cpp.o
+/usr/bin/ranlib libsdb.a

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/sdb.dir/link.d CMakeFiles/sdb.dir/sdb.cpp.o -o sdb  ../domain/src/libsdb.a ../presentation/libsdb_cli.a ../domain/src/libsdb.a /usr/lib/x86_64-linux-gnu/libedit.so
