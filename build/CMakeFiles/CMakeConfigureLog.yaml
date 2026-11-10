@@ -3357,3 +3357,639 @@ events:
         - "/usr/pkg"
         - "/opt"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.22.0/CMake/share/cmake-4.3/Modules/CTest.cmake:171 (find_program)"
+      - "CMakeLists.txt:5 (include)"
+    mode: "program"
+    variable: "GITCOMMAND"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "git"
+    candidate_directories:
+      - "/home/pedrofb/watcom/binl64/"
+      - "/home/pedrofb/.local/bin/"
+      - "/home/pedrofb/Desktop/Cs/C/CTreeGen/build/"
+      - "/home/pedrofb/.local/share/nvim/mason/bin/"
+      - "/home/pedrofb/.cargo/bin/"
+      - "/opt/st/stm32cubeclt_1.22.0/"
+      - "/opt/st/stm32cubeclt_1.22.0/STM32CubeProgrammer/bin/"
+      - "/opt/st/stm32cubeclt_1.22.0/STLink-gdb-server/bin/"
+      - "/opt/st/stm32cubeclt_1.22.0/CMake/bin/"
+      - "/opt/st/stm32cubeclt_1.22.0/Make/bin/"
+      - "/opt/st/stm32cubeclt_1.22.0/Ninja/bin/"
+      - "/opt/st/stm32cubeclt_1.22.0/st-arm-clang/bin/"
+      - "/opt/st/stm32cubeclt_1.22.0/GNU-tools-for-STM32/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/usr/bin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/pedrofb/.dotnet/tools/"
+      - "/home/pedrofb/Desktop/Cs/C/Hexy/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/opt/st/stm32cubeclt_1.22.0/CMake/bin/"
+      - "/opt/st/stm32cubeclt_1.22.0/CMake/sbin/"
+      - "/opt/st/stm32cubeclt_1.22.0/CMake/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+    searched_directories:
+      - "/home/pedrofb/watcom/binl64/git"
+      - "/home/pedrofb/.local/bin/git"
+      - "/home/pedrofb/Desktop/Cs/C/CTreeGen/build/git"
+      - "/home/pedrofb/.local/share/nvim/mason/bin/git"
+      - "/home/pedrofb/.cargo/bin/git"
+      - "/opt/st/stm32cubeclt_1.22.0/git"
+      - "/opt/st/stm32cubeclt_1.22.0/STM32CubeProgrammer/bin/git"
+      - "/opt/st/stm32cubeclt_1.22.0/STLink-gdb-server/bin/git"
+      - "/opt/st/stm32cubeclt_1.22.0/CMake/bin/git"
+      - "/opt/st/stm32cubeclt_1.22.0/Make/bin/git"
+      - "/opt/st/stm32cubeclt_1.22.0/Ninja/bin/git"
+      - "/opt/st/stm32cubeclt_1.22.0/st-arm-clang/bin/git"
+      - "/opt/st/stm32cubeclt_1.22.0/GNU-tools-for-STM32/bin/git"
+      - "/usr/local/sbin/git"
+      - "/usr/local/bin/git"
+      - "/usr/sbin/git"
+    found: "/usr/bin/git"
+    search_context:
+      ENV{PATH}:
+        - "/home/pedrofb/watcom/binl64"
+        - "/home/pedrofb/.local/bin"
+        - "/home/pedrofb/Desktop/Cs/C/CTreeGen/build"
+        - "/home/pedrofb/.local/share/nvim/mason/bin"
+        - "/home/pedrofb/watcom/binl64"
+        - "/home/pedrofb/.local/bin"
+        - "/home/pedrofb/Desktop/Cs/C/CTreeGen/build"
+        - "/home/pedrofb/.cargo/bin"
+        - "/home/pedrofb/.local/bin"
+        - "/opt/st/stm32cubeclt_1.22.0"
+        - "/opt/st/stm32cubeclt_1.22.0/STM32CubeProgrammer/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/STLink-gdb-server/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/CMake/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/Make/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/Ninja/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/st-arm-clang/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/GNU-tools-for-STM32/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/pedrofb/.dotnet/tools"
+        - "/home/pedrofb/Desktop/Cs/C/Hexy"
+        - "/home/pedrofb/Desktop/Cs/C/Hexy"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/st/stm32cubeclt_1.22.0/CMake"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:9 (find_package)"
+    name: "fmt"
+    configs:
+      -
+        filename: "fmt.cps"
+        kind: "cps"
+      -
+        filename: "fmtConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "fmt-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "fmt"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles/pkgRedirects/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles/pkgRedirects/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles/pkgRedirects/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles/pkgRedirects/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles/pkgRedirects/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.local/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.local/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.local/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.local/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.local/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/C/CTreeGen/build/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/C/CTreeGen/build/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/C/CTreeGen/build/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/C/CTreeGen/build/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/C/CTreeGen/build/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.local/share/nvim/mason/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.local/share/nvim/mason/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.local/share/nvim/mason/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.local/share/nvim/mason/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.local/share/nvim/mason/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.cargo/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.cargo/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.cargo/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.cargo/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/.cargo/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/CMake/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/CMake/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/STM32CubeProgrammer/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/STM32CubeProgrammer/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/STM32CubeProgrammer/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/STM32CubeProgrammer/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/STM32CubeProgrammer/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/STLink-gdb-server/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/STLink-gdb-server/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/STLink-gdb-server/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/STLink-gdb-server/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/STLink-gdb-server/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/CMake/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/CMake/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/CMake/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/CMake/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/CMake/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/Make/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/Make/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/Make/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/Make/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/Make/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/Ninja/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/Ninja/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/Ninja/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/Ninja/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/Ninja/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/st-arm-clang/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/st-arm-clang/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/st-arm-clang/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/st-arm-clang/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/st-arm-clang/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/GNU-tools-for-STM32/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/GNU-tools-for-STM32/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/GNU-tools-for-STM32/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/GNU-tools-for-STM32/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/st/stm32cubeclt_1.22.0/GNU-tools-for-STM32/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/games/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/games/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/games/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/games/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/games/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/snap/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/snap/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/snap/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/snap/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/C/Hexy/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/C/Hexy/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/C/Hexy/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/C/Hexy/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/pedrofb/Desktop/Cs/C/Hexy/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/fmtConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/fmt-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/lib/x86_64-linux-gnu/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/lib/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/share/cps/fmt.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/home/pedrofb/watcom/binl64"
+        - "/home/pedrofb/.local/bin"
+        - "/home/pedrofb/Desktop/Cs/C/CTreeGen/build"
+        - "/home/pedrofb/.local/share/nvim/mason/bin"
+        - "/home/pedrofb/watcom/binl64"
+        - "/home/pedrofb/.local/bin"
+        - "/home/pedrofb/Desktop/Cs/C/CTreeGen/build"
+        - "/home/pedrofb/.cargo/bin"
+        - "/home/pedrofb/.local/bin"
+        - "/opt/st/stm32cubeclt_1.22.0"
+        - "/opt/st/stm32cubeclt_1.22.0/STM32CubeProgrammer/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/STLink-gdb-server/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/CMake/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/Make/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/Ninja/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/st-arm-clang/bin"
+        - "/opt/st/stm32cubeclt_1.22.0/GNU-tools-for-STM32/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/snap/bin"
+        - "/home/pedrofb/.dotnet/tools"
+        - "/home/pedrofb/Desktop/Cs/C/Hexy"
+        - "/home/pedrofb/Desktop/Cs/C/Hexy"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/st/stm32cubeclt_1.22.0/CMake"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+...

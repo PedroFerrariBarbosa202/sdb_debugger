@@ -1,12 +1,15 @@
+#include "libsdb/parse.hpp"
+#include "libsdb/register_metadata.hpp"
 #include <algorithm>
 #include <iostream>
 #include <libsdb/bit.hpp>
+#include <libsdb/parse.hpp>
 #include <libsdb/process.hpp>
 #include <libsdb/registers.hpp>
 #include <type_traits>
 
-namespace {
-template <class T> sdb::byte128 widen(const sdb::register_info &info, T t) {
+template <class T>
+sdb::byte128 sdb::registers::widen(const sdb::register_info &info, T t) {
   using namespace sdb;
   if constexpr (std::is_floating_point_v<T>) {
     if (info.format == register_format::double_float)
@@ -28,7 +31,6 @@ template <class T> sdb::byte128 widen(const sdb::register_info &info, T t) {
 
   return to_byte128(t);
 }
-} // namespace
 
 sdb::registers::value sdb::registers::read(const register_info &info) const {
   auto bytes = as_bytes(data_);
@@ -81,4 +83,35 @@ void sdb::registers::write(const register_info &info, value val) {
     proc_->write_user_area(aligned_offset,
                            from_bytes<std::uint64_t>(bytes + aligned_offset));
   }
+}
+
+sdb::registers::value
+sdb::registers::parse_register_value(sdb::register_info info,
+                                     std::string_view text) {
+  try {
+    if (info.format == sdb::register_format::uint) {
+      switch (info.size) {
+      case 1:
+        return sdb::parser::to_integral<std::uint8_t>(text, 16).value();
+      case 2:
+        return sdb::parser::to_integral<std::uint16_t>(text, 16).value();
+      case 4:
+        return sdb::parser::to_integral<std::uint32_t>(text, 16).value();
+      case 8:
+        return sdb::parser::to_integral<std::uint64_t>(text, 16).value();
+      }
+    } else if (info.format == sdb::register_format::double_float) {
+      return sdb::parser::to_float<double>(text).value();
+    } else if (info.format == sdb::register_format::long_double) {
+      return sdb::parser::to_float<long double>(text).value();
+    } else if (info.format == sdb::register_format::vector) {
+      if (info.size == 8) {
+        return sdb::parser::parse_vector<8>(text);
+      } else if (info.size == 16) {
+        return sdb::parser::parse_vector<16>(text);
+      }
+    }
+  } catch (...) {
+  }
+  sdb::error::send("Invalid format");
 }

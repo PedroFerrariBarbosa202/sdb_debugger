@@ -5,6 +5,7 @@ sdb: \
   CMakeFiles/sdb.dir/sdb.cpp.o \
   ../domain/src/libsdb.a \
   ../presentation/libsdb_cli.a \
+  /usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0 \
   ../domain/src/libsdb.a \
   /usr/lib/x86_64-linux-gnu/libedit.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
@@ -56,6 +57,8 @@ CMakeFiles/sdb.dir/sdb.cpp.o:
 ../domain/src/libsdb.a:
 
 ../presentation/libsdb_cli.a:
+
+/usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0:
 
 ../domain/src/libsdb.a:
 

@@ -6,34 +6,6 @@
       "-I/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src",
       "-c",
       "-o",
-      "CMakeFiles/libsdb.dir/process.cpp.o",
-      "/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/process.cpp"
-    ],
-    "directory": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src",
-    "file": "/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/process.cpp",
-    "output": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src/CMakeFiles/libsdb.dir/process.cpp.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-I/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include",
-      "-I/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src",
-      "-c",
-      "-o",
-      "CMakeFiles/libsdb.dir/pipe.cpp.o",
-      "/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/pipe.cpp"
-    ],
-    "directory": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src",
-    "file": "/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/pipe.cpp",
-    "output": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src/CMakeFiles/libsdb.dir/pipe.cpp.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-I/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include",
-      "-I/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src",
-      "-c",
-      "-o",
       "CMakeFiles/libsdb.dir/registers.cpp.o",
       "/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/registers.cpp"
     ],
@@ -47,75 +19,11 @@
       "-I/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include",
       "-c",
       "-o",
-      "CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o",
-      "/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.cpp"
-    ],
-    "directory": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation",
-    "file": "/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.cpp",
-    "output": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-I/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include",
-      "-isystem",
-      "/usr/include/editline",
-      "-c",
-      "-o",
-      "CMakeFiles/sdb.dir/sdb.cpp.o",
-      "/home/pedrofb/Desktop/Cs/CPP/sdb/application/sdb.cpp"
-    ],
-    "directory": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/application",
-    "file": "/home/pedrofb/Desktop/Cs/CPP/sdb/application/sdb.cpp",
-    "output": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/application/CMakeFiles/sdb.dir/sdb.cpp.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-I/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include",
-      "-c",
-      "-o",
       "CMakeFiles/tests.dir/tests.cpp.o",
       "/home/pedrofb/Desktop/Cs/CPP/sdb/test/tests.cpp"
     ],
     "directory": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/test",
     "file": "/home/pedrofb/Desktop/Cs/CPP/sdb/test/tests.cpp",
     "output": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/test/CMakeFiles/tests.dir/tests.cpp.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-c",
-      "-o",
-      "CMakeFiles/run_endlessly.dir/run_endlessly.cpp.o",
-      "/home/pedrofb/Desktop/Cs/CPP/sdb/test/targets/run_endlessly.cpp"
-    ],
-    "directory": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets",
-    "file": "/home/pedrofb/Desktop/Cs/CPP/sdb/test/targets/run_endlessly.cpp",
-    "output": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/CMakeFiles/run_endlessly.dir/run_endlessly.cpp.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-c",
-      "-o",
-      "CMakeFiles/reg_write.dir/reg_write.s.o",
-      "/home/pedrofb/Desktop/Cs/CPP/sdb/test/targets/reg_write.s"
-    ],
-    "directory": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets",
-    "file": "/home/pedrofb/Desktop/Cs/CPP/sdb/test/targets/reg_write.s",
-    "output": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/CMakeFiles/reg_write.dir/reg_write.s.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/c++",
-      "-c",
-      "-o",
-      "CMakeFiles/reg_read.dir/reg_read.s.o",
-      "/home/pedrofb/Desktop/Cs/CPP/sdb/test/targets/reg_read.s"
-    ],
-    "directory": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets",
-    "file": "/home/pedrofb/Desktop/Cs/CPP/sdb/test/targets/reg_read.s",
-    "output": "/home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/CMakeFiles/reg_read.dir/reg_read.s.o"
   }
 ]

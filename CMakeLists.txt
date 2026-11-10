@@ -6,6 +6,7 @@ include(CTest)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(libedit REQUIRED IMPORTED_TARGET libedit)
+find_package(fmt CONFIG REQUIRED)
 
 add_subdirectory("domain/src")
 add_subdirectory("application")
@@ -15,4 +16,5 @@ if(BUILD_TESTING)
     find_package(Catch2 CONFIG REQUIRED)
     add_subdirectory("test")
 endif()
+
 

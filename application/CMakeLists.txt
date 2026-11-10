@@ -1,5 +1,5 @@
 add_executable(sdb sdb.cpp)
-target_link_libraries(sdb PRIVATE sdb::libsdb sdb_cli PkgConfig::libedit)
+target_link_libraries(sdb PRIVATE sdb::libsdb sdb_cli PkgConfig::libedit fmt::fmt)
 include(GNUInstallDirs)
 install(
     TARGETS sdb

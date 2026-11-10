@@ -98,6 +98,7 @@ application/sdb: application/CMakeFiles/sdb.dir/build.make
 application/sdb: application/CMakeFiles/sdb.dir/compiler_depend.ts
 application/sdb: domain/src/libsdb.a
 application/sdb: presentation/libsdb_cli.a
+application/sdb: /usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0
 application/sdb: domain/src/libsdb.a
 application/sdb: /usr/lib/x86_64-linux-gnu/libedit.so
 application/sdb: application/CMakeFiles/sdb.dir/link.txt
