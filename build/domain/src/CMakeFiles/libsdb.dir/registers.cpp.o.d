@@ -78,6 +78,7 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: \
  /usr/include/c++/13/bits/cxxabi_forced.h \
  /usr/include/c++/13/bits/string_view.tcc \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/error.hpp \
+ /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/13/stdexcept /usr/include/c++/13/string \
  /usr/include/c++/13/bits/allocator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
@@ -127,7 +128,6 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/register_metadata.hpp \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \

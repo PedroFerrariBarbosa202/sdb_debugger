@@ -2,6 +2,7 @@
 #include <fmt/printf.h>
 #include <iostream>
 
+// static methods
 std::vector<std::string> sdb::sdb_cli::split(std::string_view str,
                                              char delimiter) {
   std::vector<std::string> out{};
@@ -21,8 +22,33 @@ bool sdb::sdb_cli::is_prefix(std::string_view str, std::string_view of) {
   return std::equal(str.begin(), str.end(), of.begin());
 }
 
-void sdb::sdb_cli::print_stop_reason(const sdb::process &process,
-                                     sdb::stop_reason reason) {
+// concrete methods from products
+void sdb::minimal_general_view::print_help(
+    const std::vector<std::string> &args) {
+  if (args.size() == 1) {
+    std::cerr << R"(Available commands:
+      continue  - Resume the process
+      register  - Commands for operating on registers
+)";
+  } else if (sdb::sdb_cli::is_prefix(args[1], "register")) {
+    std::cerr << R"(Available commands:
+      read
+      read <register>
+      read all
+      write <register> <value>
+)";
+  } else {
+    std::cerr << "No help available for that command\n";
+  }
+}
+
+void sdb::minimal_register_view::print_registers(const std::string_view name,
+                                                 const std::string_view value) {
+  fmt::print("{}:\t{}\n", name, value);
+}
+
+void sdb::minimal_error_view::print_stop_reason(const sdb::process &process,
+                                                sdb::stop_reason reason) {
   std::string message;
   switch (reason.reason()) {
   case sdb::process_state::exited:
@@ -42,20 +68,6 @@ void sdb::sdb_cli::print_stop_reason(const sdb::process &process,
   fmt::print("Process {} {}\n", process.pid(), message);
 }
 
-void sdb::sdb_cli::print_help(const std::vector<std::string> &args) {
-  if (args.size() == 1) {
-    std::cerr << R"(Available commands:
-      continue  - Resume the process
-      registerister  - Commands for operating on registers
-)";
-  } else if (is_prefix(args[1], "register")) {
-    std::cerr << R"(Available commands:
-      read
-      read <register>
-      read all
-      write <register> <value>
-)";
-  } else {
-    std::cerr << "No help available for that command\n";
-  }
+void sdb::minimal_error_view::print_error(const sdb::error &error) {
+  std::cerr << "\033[31m" << error.what() << "\033[0m\n";
 }

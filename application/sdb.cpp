@@ -1,4 +1,3 @@
-
 #include <libsdb/error.hpp>
 #include <libsdb/process.hpp>
 
@@ -6,11 +5,8 @@
 #include <libsdb/register_metadata.hpp>
 #include <libsdb/registers.hpp>
 
-#include <algorithm>
 #include <editline/readline.h>
 #include <iostream>
-#include <signal.h>
-#include <sstream>
 #include <string>
 #include <string_view>
 #include <type_traits>
@@ -25,23 +21,29 @@
 namespace sdb {
 class sdb_debugger {
 public:
-  static void handle_register_command(sdb::process &process,
-                                      const std::vector<std::string> &args) {
-    if (args.size() < 2) {
-      sdb_cli::print_help({"help", "register"});
-      return;
-    }
+  explicit sdb_debugger(sdb_cli &factory)
+      : general_cli(factory.create_general_view()),
+        registers_cli(factory.create_register_view()),
+        errors_cli(factory.create_error_view()) {}
 
-    if (sdb_cli::is_prefix(args[1], "read")) {
-      handle_register_read(process, args);
-    } else if (sdb_cli::is_prefix(args[1], "write")) {
-      handle_register_write(process, args);
-    } else {
-      sdb_cli::print_help({"help", "register"});
-    }
+  // functions to call contrete views
+  void print_help(const std::vector<std::string> &args) {
+    general_cli->print_help(args);
   }
 
-  static std::unique_ptr<sdb::process> attach(int argc, const char **argv) {
+  void print_register(const std::string_view name,
+                      const std::string_view value) {
+    registers_cli->print_registers(name, value);
+  }
+
+  void print_stop_reason(const sdb::process &process, sdb::stop_reason reason) {
+    errors_cli->print_stop_reason(process, reason);
+  }
+
+  void print_error(const error &error) { errors_cli->print_error(error); }
+
+  // class methods
+  std::unique_ptr<sdb::process> attach(int argc, const char **argv) {
     /*passing PID*/
     if (argc == 3 && argv[1] == std::string_view("-p")) {
       pid_t pid = std::atoi(argv[2]);
@@ -52,17 +54,17 @@ public:
     }
   }
 
-  static void handle_command(std::unique_ptr<sdb::process> &process,
-                             std::string_view line) {
+  void handle_command(std::unique_ptr<sdb::process> &process,
+                      std::string_view line) {
     auto args = sdb_cli::split(line, ' ');
     auto command = args[0];
 
     if (sdb_cli::is_prefix(command, "continue")) {
       process->resume();
       auto reason = process->wait_on_signal();
-      sdb_cli::print_stop_reason(*process, reason);
+      this->print_stop_reason(*process, reason);
     } else if (sdb_cli::is_prefix(command, "help")) {
-      sdb_cli::print_help(args);
+      this->print_help(args);
     } else if (sdb_cli::is_prefix(command, "register")) {
       handle_register_command(*process, args);
     } else {
@@ -70,7 +72,7 @@ public:
     }
   }
 
-  static void update_loop(std::unique_ptr<sdb::process> &process) {
+  void update_loop(std::unique_ptr<sdb::process> &process) {
     char *line = nullptr;
     while ((line = readline("sdb> ")) != nullptr) {
       std::string line_str;
@@ -97,8 +99,12 @@ public:
   }
 
 private:
-  static void handle_register_read(sdb::process &process,
-                                   const std::vector<std::string> &args) {
+  std::unique_ptr<general_view> general_cli;
+  std::unique_ptr<register_view> registers_cli;
+  std::unique_ptr<error_view> errors_cli;
+
+  void handle_register_read(sdb::process &process,
+                            const std::vector<std::string> &args) {
     // lambda to format strings to format different data types
     auto format = [](auto t) {
       if constexpr (std::is_floating_point_v<decltype(t)>) {
@@ -121,8 +127,7 @@ private:
           continue;
 
         auto value = process.get_registers().read(info);
-        fmt::print("{}:\t{}\n", info.name,
-                   std::visit(format, value)); // TODO pass to sdb_cli
+        this->print_register(info.name, std::visit(format, value));
       }
     }
     // else read register by name
@@ -130,22 +135,22 @@ private:
       try {
         auto info = sdb::register_info_by_name(args[2]);
         auto value = process.get_registers().read(info);
-        fmt::print("{}:\t{}\n", info.name,
-                   std::visit(format, value)); // TODO pass to sdb_cli
+
+        this->print_register(info.name, std::visit(format, value));
       } catch (sdb::error &err) {
-        std::cerr << "No such registe\n";
+        this->print_error(err);
       }
     }
     // else print register help message
     else {
-      sdb_cli::print_help({"help", "register"});
+      this->print_help({"help", "register"});
     }
   }
 
-  static void handle_register_write(sdb::process &process,
-                                    const std::vector<std::string> &args) {
+  void handle_register_write(sdb::process &process,
+                             const std::vector<std::string> &args) {
     if (args.size() != 4) {
-      sdb_cli::print_help({"help", "register"});
+      this->print_help({"help", "register"});
       return;
     }
 
@@ -154,8 +159,24 @@ private:
       auto value = registers::parse_register_value(info, args[3]);
       process.get_registers().write(info, value);
     } catch (sdb::error &err) {
-      std::cerr << err.what() << '\n';
+      this->print_error(err);
       return;
+    }
+  }
+
+  void handle_register_command(sdb::process &process,
+                               const std::vector<std::string> &args) {
+    if (args.size() < 2) {
+      this->print_help({"help", "register"});
+      return;
+    }
+
+    if (sdb_cli::is_prefix(args[1], "read")) {
+      handle_register_read(process, args);
+    } else if (sdb_cli::is_prefix(args[1], "write")) {
+      handle_register_write(process, args);
+    } else {
+      this->print_help({"help", "register"});
     }
   }
 };
@@ -167,13 +188,16 @@ int main(int argc, const char **argv) {
     return -1;
   }
 
+  sdb::minimal_sdb_cli factory;
+  sdb::sdb_debugger debugger(factory);
+
   try {
     // attach to user-defined process
-    auto process = sdb::sdb_debugger::attach(argc, argv);
+    auto process = debugger.attach(argc, argv);
 
     // enter main process loop
-    sdb::sdb_debugger::update_loop(process);
+    debugger.update_loop(process);
   } catch (const sdb::error &err) {
-    std::cout << err.what() << '\n';
+    debugger.print_error(err);
   }
 }
