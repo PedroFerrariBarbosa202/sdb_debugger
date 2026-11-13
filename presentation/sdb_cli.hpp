@@ -9,65 +9,11 @@
 #include <string_view>
 #include <vector>
 
+#include "view/error_views.hpp"
+#include "view/general_views.hpp"
+#include "view/register_views.hpp"
+
 namespace sdb {
-// virtual interfaces for the products of the factory
-class general_view {
-public:
-  virtual ~general_view() = default;
-  virtual void print_help(const std::vector<std::string> &args) = 0;
-};
-
-class register_view {
-public:
-  virtual ~register_view() = default;
-  virtual void print_registers(const std::string_view name,
-                               const std::string_view value) = 0;
-};
-
-class error_view {
-public:
-  virtual ~error_view() = default;
-  virtual void print_stop_reason(const sdb::process &process,
-                                 sdb::stop_reason reason) = 0;
-  virtual void print_error(const error &error) = 0;
-};
-
-// contrete products
-class minimal_general_view : public general_view {
-public:
-  void print_help(const std::vector<std::string> &args) override;
-};
-
-class minimal_register_view : public register_view {
-public:
-  void print_registers(const std::string_view name,
-                       const std::string_view value) override;
-};
-
-class minimal_error_view : public error_view {
-public:
-  void print_stop_reason(const sdb::process &process,
-                         sdb::stop_reason reason) override;
-  void print_error(const error &error) override;
-};
-
-class json_general_view : public general_view {
-public:
-  void print_help(const std::vector<std::string> &args) override;
-};
-
-class json_register_view : public register_view {
-public:
-  void print_registers(const std::string_view name,
-                       const std::string_view value) override;
-};
-
-class json_error_view : public error_view {
-public:
-  void print_stop_reason(const sdb::process &process,
-                         sdb::stop_reason reason) override;
-  void print_error(const error &error) override;
-};
 
 // abstract factory
 class sdb_cli {

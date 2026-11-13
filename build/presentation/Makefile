@@ -209,6 +209,78 @@ sdb_cli.cpp.s:
 	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.s
 .PHONY : sdb_cli.cpp.s
 
+view/error_views.o: view/error_views.cpp.o
+.PHONY : view/error_views.o
+
+# target to build an object file
+view/error_views.cpp.o:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o
+.PHONY : view/error_views.cpp.o
+
+view/error_views.i: view/error_views.cpp.i
+.PHONY : view/error_views.i
+
+# target to preprocess a source file
+view/error_views.cpp.i:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.i
+.PHONY : view/error_views.cpp.i
+
+view/error_views.s: view/error_views.cpp.s
+.PHONY : view/error_views.s
+
+# target to generate assembly for a file
+view/error_views.cpp.s:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.s
+.PHONY : view/error_views.cpp.s
+
+view/general_views.o: view/general_views.cpp.o
+.PHONY : view/general_views.o
+
+# target to build an object file
+view/general_views.cpp.o:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o
+.PHONY : view/general_views.cpp.o
+
+view/general_views.i: view/general_views.cpp.i
+.PHONY : view/general_views.i
+
+# target to preprocess a source file
+view/general_views.cpp.i:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.i
+.PHONY : view/general_views.cpp.i
+
+view/general_views.s: view/general_views.cpp.s
+.PHONY : view/general_views.s
+
+# target to generate assembly for a file
+view/general_views.cpp.s:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.s
+.PHONY : view/general_views.cpp.s
+
+view/register_views.o: view/register_views.cpp.o
+.PHONY : view/register_views.o
+
+# target to build an object file
+view/register_views.cpp.o:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o
+.PHONY : view/register_views.cpp.o
+
+view/register_views.i: view/register_views.cpp.i
+.PHONY : view/register_views.i
+
+# target to preprocess a source file
+view/register_views.cpp.i:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.i
+.PHONY : view/register_views.cpp.i
+
+view/register_views.s: view/register_views.cpp.s
+.PHONY : view/register_views.s
+
+# target to generate assembly for a file
+view/register_views.cpp.s:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.s
+.PHONY : view/register_views.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -226,6 +298,15 @@ help:
 	@echo "... sdb_cli.o"
 	@echo "... sdb_cli.i"
 	@echo "... sdb_cli.s"
+	@echo "... view/error_views.o"
+	@echo "... view/error_views.i"
+	@echo "... view/error_views.s"
+	@echo "... view/general_views.o"
+	@echo "... view/general_views.i"
+	@echo "... view/general_views.s"
+	@echo "... view/register_views.o"
+	@echo "... view/register_views.i"
+	@echo "... view/register_views.s"
 .PHONY : help
 
 

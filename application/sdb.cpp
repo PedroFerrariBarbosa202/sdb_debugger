@@ -31,13 +31,17 @@ public:
     general_cli->print_help(args);
   }
 
-  void print_register(const std::string_view name,
+  void print_register(const sdb::register_info &info,
                       const std::string_view value) {
-    registers_cli->print_registers(name, value);
+    registers_cli->print_registers(info, value);
   }
 
   void print_stop_reason(const sdb::process &process, sdb::stop_reason reason) {
     errors_cli->print_stop_reason(process, reason);
+  }
+
+  void print_error_message(const std::string_view str) {
+    errors_cli->print_error_message(str);
   }
 
   void print_error(const error &error) { errors_cli->print_error(error); }
@@ -68,7 +72,7 @@ public:
     } else if (sdb_cli::is_prefix(command, "register")) {
       handle_register_command(*process, args);
     } else {
-      std::cerr << "unknown command\n";
+      this->print_error_message("Unknown command");
     }
   }
 
@@ -92,7 +96,7 @@ public:
         try {
           handle_command(process, line_str);
         } catch (const sdb::error &err) {
-          std::cout << err.what() << '\n';
+          this->print_error(err);
         }
       }
     }
@@ -127,7 +131,7 @@ private:
           continue;
 
         auto value = process.get_registers().read(info);
-        this->print_register(info.name, std::visit(format, value));
+        this->print_register(info, std::visit(format, value));
       }
     }
     // else read register by name
@@ -136,7 +140,7 @@ private:
         auto info = sdb::register_info_by_name(args[2]);
         auto value = process.get_registers().read(info);
 
-        this->print_register(info.name, std::visit(format, value));
+        this->print_register(info, std::visit(format, value));
       } catch (sdb::error &err) {
         this->print_error(err);
       }
@@ -183,13 +187,13 @@ private:
 } // namespace sdb
 
 int main(int argc, const char **argv) {
+  sdb::json_sdb_cli factory;
+  sdb::sdb_debugger debugger(factory);
+
   if (argc == 1) {
-    std::cerr << "No arguments given\n";
+    debugger.print_error_message("No arguments given");
     return -1;
   }
-
-  sdb::minimal_sdb_cli factory;
-  sdb::sdb_debugger debugger(factory);
 
   try {
     // attach to user-defined process

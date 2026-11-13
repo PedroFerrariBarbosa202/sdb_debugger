@@ -204,8 +204,12 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/fmt/printf.h \
- /usr/include/fmt/format.h /usr/include/c++/13/cmath /usr/include/math.h \
+ /usr/include/c++/13/bits/vector.tcc \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.hpp \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.hpp \
+ /usr/include/fmt/printf.h /usr/include/fmt/format.h \
+ /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \

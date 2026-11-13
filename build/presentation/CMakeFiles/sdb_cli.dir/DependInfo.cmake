@@ -9,6 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.cpp" "presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o" "gcc" "presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o.d"
+  "/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.cpp" "presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o" "gcc" "presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o.d"
+  "/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.cpp" "presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o" "gcc" "presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o.d"
+  "/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.cpp" "presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o" "gcc" "presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

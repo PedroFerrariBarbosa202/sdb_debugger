@@ -86,17 +86,65 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdb_cli.dir/sdb_cli.cpp.s"
 	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.cpp -o CMakeFiles/sdb_cli.dir/sdb_cli.cpp.s
 
+presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o: presentation/CMakeFiles/sdb_cli.dir/flags.make
+presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.cpp
+presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o: presentation/CMakeFiles/sdb_cli.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o -MF CMakeFiles/sdb_cli.dir/view/general_views.cpp.o.d -o CMakeFiles/sdb_cli.dir/view/general_views.cpp.o -c /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.cpp
+
+presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdb_cli.dir/view/general_views.cpp.i"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.cpp > CMakeFiles/sdb_cli.dir/view/general_views.cpp.i
+
+presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdb_cli.dir/view/general_views.cpp.s"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.cpp -o CMakeFiles/sdb_cli.dir/view/general_views.cpp.s
+
+presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: presentation/CMakeFiles/sdb_cli.dir/flags.make
+presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.cpp
+presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: presentation/CMakeFiles/sdb_cli.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o -MF CMakeFiles/sdb_cli.dir/view/register_views.cpp.o.d -o CMakeFiles/sdb_cli.dir/view/register_views.cpp.o -c /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.cpp
+
+presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdb_cli.dir/view/register_views.cpp.i"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.cpp > CMakeFiles/sdb_cli.dir/view/register_views.cpp.i
+
+presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdb_cli.dir/view/register_views.cpp.s"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.cpp -o CMakeFiles/sdb_cli.dir/view/register_views.cpp.s
+
+presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o: presentation/CMakeFiles/sdb_cli.dir/flags.make
+presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.cpp
+presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o: presentation/CMakeFiles/sdb_cli.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o -MF CMakeFiles/sdb_cli.dir/view/error_views.cpp.o.d -o CMakeFiles/sdb_cli.dir/view/error_views.cpp.o -c /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.cpp
+
+presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdb_cli.dir/view/error_views.cpp.i"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.cpp > CMakeFiles/sdb_cli.dir/view/error_views.cpp.i
+
+presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdb_cli.dir/view/error_views.cpp.s"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.cpp -o CMakeFiles/sdb_cli.dir/view/error_views.cpp.s
+
 # Object files for target sdb_cli
 sdb_cli_OBJECTS = \
-"CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o"
+"CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o" \
+"CMakeFiles/sdb_cli.dir/view/general_views.cpp.o" \
+"CMakeFiles/sdb_cli.dir/view/register_views.cpp.o" \
+"CMakeFiles/sdb_cli.dir/view/error_views.cpp.o"
 
 # External object files for target sdb_cli
 sdb_cli_EXTERNAL_OBJECTS =
 
 presentation/libsdb_cli.a: presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o
+presentation/libsdb_cli.a: presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o
+presentation/libsdb_cli.a: presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o
+presentation/libsdb_cli.a: presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o
 presentation/libsdb_cli.a: presentation/CMakeFiles/sdb_cli.dir/build.make
 presentation/libsdb_cli.a: presentation/CMakeFiles/sdb_cli.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsdb_cli.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libsdb_cli.a"
 	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && $(CMAKE_COMMAND) -P CMakeFiles/sdb_cli.dir/cmake_clean_target.cmake
 	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/presentation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sdb_cli.dir/link.txt --verbose=$(VERBOSE)
 

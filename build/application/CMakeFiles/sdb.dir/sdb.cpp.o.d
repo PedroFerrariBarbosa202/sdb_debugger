@@ -204,7 +204,11 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: \
  /home/pedrofb/Desktop/Cs/CPP/sdb/application/../presentation/sdb_cli.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/editline/readline.h \
+ /usr/include/c++/13/bits/vector.tcc \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/application/../presentation/view/error_views.hpp \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/application/../presentation/view/general_views.hpp \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/application/../presentation/view/register_views.hpp \
+ /usr/include/editline/readline.h \
  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
  /usr/include/x86_64-linux-gnu/asm/ioctls.h \

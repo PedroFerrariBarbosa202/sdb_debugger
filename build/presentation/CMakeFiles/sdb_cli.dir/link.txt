@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsdb_cli.a CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o
+/usr/bin/ar qc libsdb_cli.a CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o CMakeFiles/sdb_cli.dir/view/general_views.cpp.o CMakeFiles/sdb_cli.dir/view/register_views.cpp.o CMakeFiles/sdb_cli.dir/view/error_views.cpp.o
 /usr/bin/ranlib libsdb_cli.a

@@ -4,6 +4,9 @@
 application/CMakeFiles/sdb.dir/sdb.cpp.o
  /home/pedrofb/Desktop/Cs/CPP/sdb/application/sdb.cpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.hpp
+ /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.hpp
+ /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp
+ /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/error.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp

@@ -154,7 +154,7 @@ class minimal_register_view{
  + void print_register();
 }
 
-class minimal_general_view{
+class minimal_error_view{
  + void print_stop_reason();
  + void print_error();
 }
@@ -175,9 +175,13 @@ class json_error_view{
 sdb_cli <|-- minimal_sdb_cli
 sdb_cli <|-- json_sdb_cli
 
-sdb_cli --> general_view
-sdb_cli --> register_view
-sdb_cli --> error_view
+minimal_sdb_cli --> general_view
+minimal_sdb_cli --> register_view
+minimal_sdb_cli --> error_view
+
+json_sdb_cli --> general_view
+json_sdb_cli --> register_view
+json_sdb_cli --> error_view
 
 minimal_general_view <|-- general_view
 minimal_register_view <|-- register_view

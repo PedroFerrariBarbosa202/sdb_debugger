@@ -3,6 +3,9 @@
 
 application/CMakeFiles/sdb.dir/sdb.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/application/sdb.cpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/error.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp \
@@ -396,9 +399,11 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /lib/x86_64-linux-gnu/libc.so.6:
 
-/usr/include/c++/13/tr1/riemann_zeta.tcc:
+/lib/x86_64-linux-gnu/libbsd.so.0:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/lib/i386-linux-gnu/libtinfo.so.6:
+
+/lib/i386-linux-gnu/libmd.so.0:
 
 /usr/include/c++/13/tr1/gamma.tcc:
 
@@ -418,15 +423,9 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /usr/include/c++/13/streambuf:
 
-/usr/include/c++/13/sstream:
-
 /usr/include/c++/13/bits/new_allocator.h:
 
 /usr/include/c++/13/ratio:
-
-/usr/include/c++/13/tuple:
-
-/usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/13/pstl/execution_defs.h:
 
@@ -536,11 +535,13 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/c++/13/bits/concept_check.h:
+/usr/include/c++/13/system_error:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
 
-presentation/libsdb_cli.a:
+/usr/include/c++/13/bits/concept_check.h:
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
 
@@ -566,17 +567,7 @@ presentation/libsdb_cli.a:
 
 /usr/include/linux/ioctl.h:
 
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/asm-generic/ioctls.h:
-
 /usr/include/alloca.h:
-
-/usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
@@ -588,8 +579,6 @@ presentation/libsdb_cli.a:
 
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp:
 
-/lib/i386-linux-gnu/libtinfo.so.6:
-
 /usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/fmt/format.h:
@@ -598,21 +587,27 @@ presentation/libsdb_cli.a:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/c++/13/system_error:
+/usr/include/c++/13/cerrno:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/c++/13/tr1/hypergeometric.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
-/usr/include/c++/13/bits/ostream.tcc:
+/usr/include/c++/13/tr1/exp_integral.tcc:
 
-/usr/include/c++/13/bits/stl_function.h:
+/usr/include/c++/13/bits/allocated_ptr.h:
 
-/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.hpp:
+/usr/include/c++/13/bits/locale_conv.h:
 
-/usr/include/c++/13/bits/fs_dir.h:
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
-/usr/include/c++/13/bits/basic_ios.tcc:
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/types.hpp:
 
@@ -620,11 +615,19 @@ presentation/libsdb_cli.a:
 
 /usr/include/x86_64-linux-gnu/asm/ioctls.h:
 
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+/usr/include/c++/13/tuple:
 
-/usr/include/c++/13/bits/alloc_traits.h:
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp:
+
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/lib/i386-linux-gnu/libmd.so.0:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/13/bits/stringfwd.h:
 
@@ -635,6 +638,50 @@ presentation/libsdb_cli.a:
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/usr/include/c++/13/bits/stl_function.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc:
+
+/usr/include/c++/13/stdexcept:
+
+/usr/include/c++/13/cstdlib:
+
+/usr/include/fmt/core.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/c++/13/sstream:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.hpp:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/c++/13/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/13/exception:
+
+/usr/include/c++/13/ext/type_traits.h:
+
+/usr/include/c++/13/bits/shared_ptr.h:
+
+/usr/include/c++/13/debug/assertions.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.hpp:
+
+/usr/include/c++/13/bits/fs_dir.h:
 
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
@@ -648,31 +695,23 @@ presentation/libsdb_cli.a:
 
 /usr/include/x86_64-linux-gnu/asm/ioctl.h:
 
-/usr/include/c++/13/bits/exception_defines.h:
+/usr/include/c++/13/limits:
 
-/usr/include/c++/13/bits/functional_hash.h:
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
-/usr/lib/i386-linux-gnu/libmd.so.0:
+/usr/include/c++/13/ext/atomicity.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/lib/x86_64-linux-gnu/libtinfo.so.6:
 
-/usr/include/c++/13/bits/stl_algo.h:
+/usr/include/c++/13/bits/fs_fwd.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/usr/include/c++/13/bits/stream_iterator.h:
 
-/usr/include/c++/13/bits/localefwd.h:
+/usr/include/c++/13/bits/refwrap.h:
 
-/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc:
+/usr/include/c++/13/bits/align.h:
 
-/usr/include/c++/13/stdexcept:
-
-/usr/include/c++/13/cstdlib:
-
-/usr/include/fmt/core.h:
-
-/usr/include/c++/13/bits/uses_allocator.h:
-
-/usr/include/c++/13/bits/basic_string.h:
+/usr/include/c++/13/backward/auto_ptr.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
 
@@ -694,59 +733,17 @@ presentation/libsdb_cli.a:
 
 /usr/include/x86_64-linux-gnu/sys/user.h:
 
-/usr/include/c++/13/limits:
+/usr/include/asm-generic/ioctls.h:
 
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+/usr/include/c++/13/bits/cpp_type_traits.h:
 
-/usr/include/c++/13/ext/atomicity.h:
+/usr/include/c++/13/bits/parse_numbers.h:
 
-/lib/x86_64-linux-gnu/libtinfo.so.6:
+presentation/libsdb_cli.a:
 
-/usr/include/c++/13/bits/fs_fwd.h:
+/usr/include/c++/13/bits/stl_algo.h:
 
-/usr/include/c++/13/bits/stream_iterator.h:
-
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/c++/13/bits/align.h:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-/usr/include/c++/13/cerrno:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/c++/13/tr1/exp_integral.tcc:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/c++/13/bits/locale_conv.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
-/usr/include/c++/13/cwchar:
-
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/13/exception:
-
-/usr/include/c++/13/ext/type_traits.h:
-
-/usr/include/c++/13/bits/shared_ptr.h:
-
-/usr/include/c++/13/debug/assertions.h:
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
@@ -814,6 +811,16 @@ presentation/libsdb_cli.a:
 
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/usr/include/c++/13/bits/move.h:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/13/bits/nested_exception.h:
+
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/13/bits/specfun.h:
@@ -834,11 +841,21 @@ presentation/libsdb_cli.a:
 
 /usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
-/usr/include/c++/13/bits/char_traits.h:
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
 
-/usr/include/c++/13/bits/move.h:
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
-/usr/include/c++/13/bits/shared_ptr_base.h:
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/c++/13/bits/exception.h:
 
@@ -849,12 +866,6 @@ presentation/libsdb_cli.a:
 /usr/include/c++/13/typeinfo:
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
-
-/usr/include/c++/13/bits/nested_exception.h:
-
-/usr/include/ctype.h:
-
-/usr/include/linux/errno.h:
 
 /usr/include/editline/readline.h:
 
@@ -953,6 +964,8 @@ presentation/libsdb_cli.a:
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.hpp:
 
 /usr/include/c++/13/bits/string_view.tcc:
 
@@ -1079,7 +1092,3 @@ presentation/libsdb_cli.a:
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
 domain/src/libsdb.a:
-
-/lib/i386-linux-gnu/libmd.so.0:
-
-/lib/x86_64-linux-gnu/libbsd.so.0:
