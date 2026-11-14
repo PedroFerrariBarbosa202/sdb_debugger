@@ -191,6 +191,10 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/optional \
  /usr/include/c++/13/bits/enable_special_members.h \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/pipe.hpp \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/registers.hpp \
  /usr/include/x86_64-linux-gnu/sys/user.h /usr/include/c++/13/variant \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/register_metadata.hpp \
@@ -202,9 +206,6 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/details/registers.inc \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/types.hpp \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.hpp \
  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp \
  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.hpp \
@@ -231,5 +232,4 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/fmt/core.h \
- /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
- /usr/include/c++/13/iostream
+ /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h

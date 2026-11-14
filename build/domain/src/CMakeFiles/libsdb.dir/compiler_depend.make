@@ -470,6 +470,7 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/error.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/parse.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp \

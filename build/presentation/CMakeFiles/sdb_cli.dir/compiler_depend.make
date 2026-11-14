@@ -4,6 +4,7 @@
 presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.cpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/error.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp \
@@ -294,6 +295,7 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: /home/pedrofb/Desktop/Cs/CPP/
 presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.cpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/error.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp \
@@ -371,6 +373,7 @@ presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o: /home/pedrofb/Deskto
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
   /usr/include/c++/13/bits/stl_heap.h \
@@ -381,6 +384,7 @@ presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o: /home/pedrofb/Deskto
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
@@ -391,6 +395,7 @@ presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o: /home/pedrofb/Deskto
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
@@ -456,6 +461,7 @@ presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o: /home/pedrofb/Deskto
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/variant \
+  /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -577,6 +583,7 @@ presentation/CMakeFiles/sdb_cli.dir/view/error_views.cpp.o: /home/pedrofb/Deskto
 presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.cpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/error.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp \
@@ -922,6 +929,7 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
   /usr/include/c++/13/bits/stl_heap.h \
@@ -932,6 +940,7 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
@@ -942,6 +951,7 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
@@ -992,6 +1002,7 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -1232,8 +1243,6 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/features-time64.h:
 
-/usr/include/endian.h:
-
 /usr/include/c++/13/typeinfo:
 
 /usr/include/c++/13/type_traits:
@@ -1244,9 +1253,9 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/c++/13/tr1/special_function_util.h:
 
-/usr/include/c++/13/bits/shared_ptr_base.h:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
-/usr/include/c++/13/bits/move.h:
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
 
 /usr/include/c++/13/tr1/modified_bessel_func.tcc:
 
@@ -1261,6 +1270,10 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/13/bits/nested_exception.h:
+
+/usr/include/c++/13/bits/move.h:
+
+/usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
@@ -1324,6 +1337,18 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
+/usr/include/c++/13/cerrno:
+
 /usr/include/c++/13/debug/assertions.h:
 
 /usr/include/c++/13/bits/shared_ptr.h:
@@ -1337,14 +1362,6 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 /usr/include/c++/13/cwchar:
 
 /usr/include/c++/13/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/13/bits/locale_conv.h:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
-/usr/include/c++/13/cerrno:
 
 /usr/include/c++/13/bits/quoted_string.h:
 
@@ -1381,6 +1398,12 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/endian.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp:
+
+/usr/include/c++/13/cmath:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
@@ -1477,10 +1500,6 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 /usr/include/c++/13/bits/charconv.h:
 
 /usr/include/alloca.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
 
 /usr/include/c++/13/array:
 
@@ -1586,8 +1605,6 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/c++/13/ctime:
 
-/usr/include/c++/13/cmath:
-
 /usr/include/c++/13/codecvt:
 
 /usr/include/c++/13/cstdio:
@@ -1683,7 +1700,3 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 /usr/include/c++/13/tuple:
 
 /usr/include/c++/13/tr1/gamma.tcc:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/c++/13/tr1/riemann_zeta.tcc:

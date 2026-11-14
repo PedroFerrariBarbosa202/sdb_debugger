@@ -195,6 +195,7 @@ presentation/CMakeFiles/sdb_cli.dir/view/general_views.cpp.o: \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/optional \
  /usr/include/c++/13/bits/enable_special_members.h \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/pipe.hpp \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/registers.hpp \
  /usr/include/x86_64-linux-gnu/sys/user.h /usr/include/c++/13/variant \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/register_metadata.hpp \

@@ -1,6 +1,5 @@
 #include "sdb_cli.hpp"
 #include <fmt/printf.h>
-#include <iostream>
 
 std::vector<std::string> sdb::sdb_cli::split(std::string_view str,
                                              char delimiter) {

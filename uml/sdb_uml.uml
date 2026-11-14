@@ -1,3 +1,4 @@
+
 @startuml
 package domain{
 enum register_id{
@@ -32,9 +33,9 @@ struct register_info{
       register_type type
       register_format format
 }
-register_info *.. register_id
-register_info *.. register_type
-register_info *.. register_format
+register_info *-- register_id
+register_info *-- register_type
+register_info *-- register_format
 
 class register_metadata{
  - {static} register_info g_register_infos[]
@@ -44,7 +45,7 @@ class register_metadata{
  + {static} register_info& register_info_by_name(register_id id)
  + {static} register_info& register_info_by_dwarf(register_id id)
 }
-register_metadata *.. register_info
+register_metadata *-- register_info
 
 
 class registers{
@@ -60,7 +61,7 @@ class registers{
  - process *proc_;
 }
 
-registers <.. register_metadata
+registers --> register_metadata
 
 enum process_state{
     stopped,
@@ -73,7 +74,7 @@ class stop_reason{
   - process_state reason
   - uint8_t info
 }
-stop_reason *.. process_state
+stop_reason *-- process_state
 
 class process{
  - pid_t pid_ = 0;
@@ -87,11 +88,13 @@ class process{
  + stop_reason wait_on_signal();
  + pid_t pid() const;
  + process_state state();
+ + virt_addr get_pc();
 }
-process <-- process_state
+process --> process_state
 process *-- stop_reason
 process o-- pipe
 process *-- registers
+process --> virt_addr
 
 class pipe{
   - {static} unsigned read_fd = 0;
@@ -131,6 +134,7 @@ class json_sdb_cli{
  + unique_ptr<error_view> create_error_view();
 }
 
+package view{
 abstract class general_view{
  + {abstract} ~general_view();
  + {abstract} void print_help();
@@ -171,6 +175,7 @@ class json_error_view{
  + void print_stop_reason();
  + void print_error();
 }
+}
 
 sdb_cli <|-- minimal_sdb_cli
 sdb_cli <|-- json_sdb_cli
@@ -195,13 +200,14 @@ json_error_view <|-- error_view
 package application{
 class sdb{
   + unique_ptr<process> attach();
-  + void handle_command();
   + void update_loop();
-  - void handle_register_command();
   - void handle_register_read();
   - void handle_register_write();
+  - void handle_register_command();
+  - void handle_command();
 }
 sdb --> process
 sdb --> sdb_cli
 }
 @enduml
+

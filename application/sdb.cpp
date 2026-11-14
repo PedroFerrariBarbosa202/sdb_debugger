@@ -1,3 +1,4 @@
+#include <cstdlib>
 #include <libsdb/error.hpp>
 #include <libsdb/process.hpp>
 
@@ -6,7 +7,6 @@
 #include <libsdb/registers.hpp>
 
 #include <editline/readline.h>
-#include <iostream>
 #include <string>
 #include <string_view>
 #include <type_traits>
@@ -58,24 +58,6 @@ public:
     }
   }
 
-  void handle_command(std::unique_ptr<sdb::process> &process,
-                      std::string_view line) {
-    auto args = sdb_cli::split(line, ' ');
-    auto command = args[0];
-
-    if (sdb_cli::is_prefix(command, "continue")) {
-      process->resume();
-      auto reason = process->wait_on_signal();
-      this->print_stop_reason(*process, reason);
-    } else if (sdb_cli::is_prefix(command, "help")) {
-      this->print_help(args);
-    } else if (sdb_cli::is_prefix(command, "register")) {
-      handle_register_command(*process, args);
-    } else {
-      this->print_error_message("Unknown command");
-    }
-  }
-
   void update_loop(std::unique_ptr<sdb::process> &process) {
     char *line = nullptr;
     while ((line = readline("sdb> ")) != nullptr) {
@@ -122,7 +104,9 @@ private:
 
     // if user passes 2 args or "all" as args[2], it should print all gpr regs
     if (args.size() == 2 or (args.size() == 3 and args[2] == "all")) {
-      for (auto &info : sdb::g_register_infos) {
+      std::vector<register_info> regs_info =
+          sdb::register_metadata::get_register_infos();
+      for (auto &info : regs_info) {
         auto should_print =
             (args.size() == 3 or info.type == sdb::register_type::gpr) and
             info.name != "orig_rax";
@@ -137,7 +121,7 @@ private:
     // else read register by name
     else if (args.size() == 3) {
       try {
-        auto info = sdb::register_info_by_name(args[2]);
+        auto info = sdb::register_metadata::register_info_by_name(args[2]);
         auto value = process.get_registers().read(info);
 
         this->print_register(info, std::visit(format, value));
@@ -159,7 +143,7 @@ private:
     }
 
     try {
-      auto info = sdb::register_info_by_name(args[2]);
+      auto info = sdb::register_metadata::register_info_by_name(args[2]);
       auto value = registers::parse_register_value(info, args[3]);
       process.get_registers().write(info, value);
     } catch (sdb::error &err) {
@@ -181,6 +165,30 @@ private:
       handle_register_write(process, args);
     } else {
       this->print_help({"help", "register"});
+    }
+  }
+
+  void handle_command(std::unique_ptr<sdb::process> &process,
+                      std::string_view line) {
+    auto args = sdb_cli::split(line, ' ');
+    auto command = args[0];
+
+    if (sdb_cli::is_prefix(command, "quit")) {
+      // quit program
+      exit(0);
+    } else if (sdb_cli::is_prefix(command, "continue")) {
+      // resume the process and print stop reason if necessary
+      process->resume();
+      auto reason = process->wait_on_signal();
+      this->print_stop_reason(*process, reason);
+    } else if (sdb_cli::is_prefix(command, "help")) {
+      // print command list
+      this->print_help(args);
+    } else if (sdb_cli::is_prefix(command, "register")) {
+      // handle register operations
+      handle_register_command(*process, args);
+    } else {
+      this->print_error_message("Unknown command");
     }
   }
 };

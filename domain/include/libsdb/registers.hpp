@@ -1,5 +1,5 @@
-#ifndef INCLUDElibsdbregistersregisters.hpp_
-#define INCLUDElibsdbregistersregisters .hpp_
+#ifndef registers_HPP_
+#define registers_HPP_
 
 #include <sys/user.h>
 #include <variant>
@@ -25,11 +25,11 @@ public:
   void write(const register_info &, value val);
 
   template <class T> T read_by_id_as(register_id id) const {
-    return std::get<T>(read(register_info_by_id(id)));
+    return std::get<T>(read(register_metadata::register_info_by_id(id)));
   }
 
   void write_by_id(register_id id, value val) {
-    write(register_info_by_id(id), val);
+    write(register_metadata::register_info_by_id(id), val);
   }
 
   static sdb::registers::value parse_register_value(sdb::register_info info,
@@ -46,4 +46,4 @@ private:
 };
 } // namespace sdb
 
-#endif // INCLUDElibsdbregistersregisters.hpp_
+#endif // registers_HPP_

@@ -6,6 +6,7 @@
 #include <optional>
 #include <sys/types.h>
 
+#include <libsdb/pipe.hpp>
 #include <libsdb/registers.hpp>
 
 namespace sdb {
@@ -69,6 +70,8 @@ private:
   bool is_attached_ = true;
   process_state state_ = process_state::stopped;
   std::unique_ptr<registers> registers_;
+
+  static void exit_with_perror(sdb::pipe &channel, std::string const &prefix);
 
   /*private constructor*/
   process(pid_t pid, bool terminate_on_end, bool is_attached)

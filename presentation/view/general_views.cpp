@@ -7,6 +7,7 @@ void sdb::minimal_general_view::print_help(
     const std::vector<std::string> &args) {
   if (args.size() == 1) {
     std::cerr << R"(Available commands:
+      quit      - Exit the program
       continue  - Resume the process
       register  - Commands for operating on registers
 )";
@@ -28,6 +29,7 @@ void sdb::json_general_view::print_help(const std::vector<std::string> &args) {
     fmt::print(R"(
 {{
     "commands": {{
+        "quit"    : "Exit the program"
         "continue": "Resume the process",
         "register": "Commands for operating on registers"
     }}

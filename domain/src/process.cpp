@@ -5,15 +5,6 @@
 #include <unistd.h>
 
 #include <libsdb/error.hpp>
-#include <libsdb/pipe.hpp>
-
-namespace {
-void exit_with_perror(sdb::pipe &channel, std::string const &prefix) {
-  auto message = prefix + ": " + std::strerror(errno);
-  channel.write(reinterpret_cast<std::byte *>(message.data()), message.size());
-  exit(-1);
-}
-} // namespace
 
 sdb::process_state sdb::stop_reason::reason() const { return reason_; }
 
@@ -30,6 +21,13 @@ sdb::stop_reason::stop_reason(int wait_status) {
     reason_ = process_state::stopped;
     info_ = WSTOPSIG(wait_status);
   }
+}
+
+void sdb::process::exit_with_perror(sdb::pipe &channel,
+                                    std::string const &prefix) {
+  auto message = prefix + ": " + std::strerror(errno);
+  channel.write(reinterpret_cast<std::byte *>(message.data()), message.size());
+  exit(-1);
 }
 
 sdb::stop_reason sdb::process::wait_on_signal() {
@@ -147,7 +145,8 @@ void sdb::process::read_all_registers() {
 
   for (int i = 0; i < 8; i++) {
     auto id = static_cast<int>(register_id::dr0) + i;
-    auto info = register_info_by_id(static_cast<register_id>(id));
+    auto info = sdb::register_metadata::register_info_by_id(
+        static_cast<register_id>(id));
 
     errno = 0;
     std::int64_t data = ptrace(PTRACE_PEEKUSER, pid_, info.offset, nullptr);

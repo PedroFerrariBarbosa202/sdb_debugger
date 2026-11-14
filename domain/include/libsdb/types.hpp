@@ -1,5 +1,5 @@
-#ifndef INCLUDElibsdbtypestypes.hpp_
-#define INCLUDElibsdbtypestypes .hpp_
+#ifndef types_HPP_
+#define types_HPP_
 
 #include <array>
 #include <cstddef>
@@ -48,4 +48,4 @@ private:
 
 } // namespace sdb
 
-#endif // INCLUDElibsdbtypestypes.hpp_
+#endif // types_HPP_
