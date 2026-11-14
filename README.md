@@ -5,6 +5,8 @@ Project based on the book *Write a Native X64 Debugger from Scratch*, by Sy Bran
 </p>
 
 ---
+## Releases
+All releases are compiled for linux. If you don't want to build the project, please consider reading the execution instructions in one of the available releases.
 
 ## Dependencies
 - vcpkg
