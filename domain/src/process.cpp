@@ -1,3 +1,4 @@
+#include <fmt/format.h>
 #include <libsdb/process.hpp>
 #include <sys/ptrace.h>
 #include <sys/types.h>
@@ -63,9 +64,15 @@ sdb::process::launch(std::filesystem::path path, bool debug,
     if (debug and ptrace(PTRACE_TRACEME, 0, nullptr, nullptr) < 0) {
       exit_with_perror(channel, "Tracing failed");
     }
+
+    // append a './' in the beginning of executables as a quality of life
+    if (path.string().find('/') == std::string::npos) {
+      path = std::filesystem::path("./") / path;
+    }
     if (execlp(path.c_str(), path.c_str(), nullptr) < 0) {
       exit_with_perror(channel, "exec failed");
     }
+
     if (stdout_replacement) {
       if (dup2(*stdout_replacement, STDOUT_FILENO) < 0) {
         exit_with_perror(channel, "stdout replacement failed");

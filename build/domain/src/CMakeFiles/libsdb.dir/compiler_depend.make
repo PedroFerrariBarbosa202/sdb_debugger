@@ -249,6 +249,7 @@ domain/src/CMakeFiles/libsdb.dir/process.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb
   /usr/include/c++/13/bits/shared_ptr.h \
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/specfun.h \
   /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algo.h \
@@ -265,6 +266,7 @@ domain/src/CMakeFiles/libsdb.dir/process.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
@@ -278,6 +280,7 @@ domain/src/CMakeFiles/libsdb.dir/process.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cmath \
   /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
@@ -304,6 +307,7 @@ domain/src/CMakeFiles/libsdb.dir/process.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/locale \
   /usr/include/c++/13/memory \
@@ -321,6 +325,18 @@ domain/src/CMakeFiles/libsdb.dir/process.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
@@ -331,10 +347,13 @@ domain/src/CMakeFiles/libsdb.dir/process.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/fmt/core.h \
+  /usr/include/fmt/format.h \
   /usr/include/libintl.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/signal.h \
@@ -359,11 +378,20 @@ domain/src/CMakeFiles/libsdb.dir/process.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -765,13 +793,17 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/ptrace-shared.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
@@ -794,6 +826,20 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 /usr/include/c++/13/iostream:
 
 /usr/include/libintl.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/13/tr1/poly_hermite.tcc:
+
+/usr/include/c++/13/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/13/tr1/legendre_function.tcc:
+
+/usr/include/c++/13/tr1/ell_integral.tcc:
+
+/usr/include/c++/13/tr1/bessel_function.tcc:
 
 /usr/include/c++/13/streambuf:
 
@@ -825,6 +871,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 
 /usr/include/c++/13/codecvt:
 
+/usr/include/c++/13/cmath:
+
 /usr/include/c++/13/bits/unique_ptr.h:
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
@@ -833,9 +881,13 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
+/usr/include/math.h:
+
 /usr/include/c++/13/bits/streambuf.tcc:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/13/bits/specfun.h:
 
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/bit.hpp:
 
@@ -863,7 +915,11 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 
 /usr/include/c++/13/bits/basic_ios.tcc:
 
+/usr/include/fmt/format.h:
+
 /usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
@@ -889,6 +945,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/types.hpp:
 
+/usr/include/fmt/core.h:
+
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc:
 
 /usr/include/c++/13/sstream:
@@ -896,6 +954,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/process.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
@@ -963,6 +1023,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/c++/13/bits/stream_iterator.h:
+
 /usr/include/c++/13/vector:
 
 /usr/include/c++/13/bits/utility.h:
@@ -1026,6 +1088,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 /usr/include/c++/13/typeinfo:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
@@ -1099,6 +1163,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 
 /usr/include/wchar.h:
 
+/usr/include/c++/13/iterator:
+
 /usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/c++/13/clocale:
@@ -1116,6 +1182,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/13/bits/basic_string.h:
 
@@ -1136,6 +1204,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/c++/13/ext/concurrence.h:
 
@@ -1162,6 +1232,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 /usr/include/linux/errno.h:
 
 /usr/include/ctype.h:
+
+/usr/include/c++/13/tr1/gamma.tcc:
 
 /usr/include/c++/13/tuple:
 
@@ -1190,6 +1262,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/unistd.h:
 
@@ -1233,6 +1307,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
 /usr/include/c++/13/cerrno:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
@@ -1240,6 +1316,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/c++/13/new:
 
@@ -1285,6 +1363,8 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 
 /usr/include/x86_64-linux-gnu/bits/types/idtype_t.h:
 
+/usr/include/c++/13/tr1/beta_function.tcc:
+
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
@@ -1327,11 +1407,15 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: /home/pedrofb/Desktop/Cs/CPP/s
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
 
+/usr/include/c++/13/tr1/exp_integral.tcc:
+
 /usr/include/c++/13/bits/exception.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
+
+/usr/include/c++/13/tr1/special_function_util.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
