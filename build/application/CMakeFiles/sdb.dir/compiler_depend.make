@@ -3,15 +3,19 @@
 
 application/CMakeFiles/sdb.dir/sdb.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/application/sdb.cpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/breakpoint_views.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/breakpoint_site.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/error.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/parse.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/stoppoint_collection.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/types.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -112,6 +116,7 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/appli
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
+  /usr/include/c++/13/charconv \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
   /usr/include/c++/13/codecvt \
@@ -405,7 +410,11 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /lib/i386-linux-gnu/libmd.so.0:
 
-/usr/include/c++/13/tr1/gamma.tcc:
+presentation/libsdb_cli.a:
+
+domain/src/libsdb.a:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/include/c++/13/tr1/ell_integral.tcc:
 
@@ -420,8 +429,6 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 /usr/include/c++/13/bits/locale_facets_nonio.h:
 
 /usr/include/c++/13/bits/chrono.h:
-
-/usr/include/c++/13/streambuf:
 
 /usr/include/c++/13/bits/new_allocator.h:
 
@@ -475,15 +482,15 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /usr/include/c++/13/ctime:
 
+/usr/include/c++/13/streambuf:
+
+/usr/include/c++/13/charconv:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
 /usr/include/c++/13/bits/vector.tcc:
 
 /usr/include/c++/13/bits/unique_ptr.h:
-
-/usr/include/c++/13/bits/streambuf.tcc:
-
-/usr/include/c++/13/cstdint:
-
-/usr/include/math.h:
 
 /usr/include/c++/13/ext/numeric_traits.h:
 
@@ -535,13 +542,29 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /usr/include/c++/13/bits/concept_check.h:
 
-/usr/include/c++/13/exception:
-
-/usr/include/c++/13/ext/type_traits.h:
-
 /usr/include/c++/13/bits/shared_ptr.h:
 
 /usr/include/c++/13/debug/assertions.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/include/c++/13/ios:
+
+/usr/include/x86_64-linux-gnu/asm/ioctl.h:
+
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/lib/i386-linux-gnu/libmd.so.0:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/c++/13/bits/basic_string.h:
 
 /usr/include/c++/13/cctype:
 
@@ -565,10 +588,6 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /usr/include/x86_64-linux-gnu/sys/ioctl.h:
 
-/usr/include/c++/13/bits/charconv.h:
-
-/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp:
-
 /usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/fmt/format.h:
@@ -576,6 +595,46 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 /usr/include/c++/13/backward/binders.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/c++/13/bits/stream_iterator.h:
+
+/usr/include/c++/13/bits/align.h:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/c++/13/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/13/bits/allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp:
+
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/breakpoint_site.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/c++/13/cerrno:
 
@@ -605,93 +664,27 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /usr/include/x86_64-linux-gnu/asm/ioctls.h:
 
+/usr/include/c++/13/bits/streambuf.tcc:
+
+/usr/include/c++/13/cstdint:
+
+/usr/include/math.h:
+
+/usr/include/c++/13/exception:
+
+/usr/include/c++/13/ext/type_traits.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/breakpoint_views.hpp:
+
 /usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/x86_64-linux-gnu/sys/user.h:
 
-/usr/include/asm-generic/ioctls.h:
+/home/pedrofb/Desktop/Cs/CPP/sdb/application/sdb.cpp:
 
-/usr/include/c++/13/bits/cpp_type_traits.h:
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/c++/13/tuple:
-
-/usr/include/c++/13/pstl/glue_algorithm_defs.h:
-
-/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp:
-
-/usr/include/c++/13/bits/exception_defines.h:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/lib/i386-linux-gnu/libmd.so.0:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/c++/13/array:
-
-/usr/include/c++/13/variant:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
-
-/usr/include/c++/13/bits/memoryfwd.h:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
-/usr/include/c++/13/tr1/poly_hermite.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp:
-
-/usr/include/c++/13/bits/allocator.h:
-
-/usr/include/c++/13/bits/localefwd.h:
-
-/usr/include/c++/13/bits/stl_function.h:
-
-/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc:
-
-/usr/include/c++/13/stdexcept:
-
-/usr/include/c++/13/cstdlib:
-
-/usr/include/fmt/core.h:
-
-/usr/include/c++/13/bits/uses_allocator.h:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/c++/13/sstream:
-
-/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.hpp:
-
-/usr/include/linux/errno.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/c++/13/cwchar:
-
-/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.hpp:
 
@@ -701,17 +694,35 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /usr/include/c++/13/bits/fs_dir.h:
 
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp:
 
-/home/pedrofb/Desktop/Cs/CPP/sdb/application/sdb.cpp:
+/usr/include/c++/13/bits/charconv.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+/usr/include/c++/13/bits/stl_function.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/c++/13/sstream:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.hpp:
+
+/usr/include/linux/errno.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc:
+
+/usr/include/c++/13/stdexcept:
+
+/usr/include/c++/13/cstdlib:
+
+/usr/include/fmt/core.h:
 
 /usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
 
-/usr/include/c++/13/ios:
+/lib/i386-linux-gnu/libbsd.so.0:
 
-/usr/include/x86_64-linux-gnu/asm/ioctl.h:
+/usr/include/c++/13/compare:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
@@ -720,6 +731,26 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp:
 
 /usr/include/endian.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/parse.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/c++/13/array:
+
+/usr/include/c++/13/variant:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /usr/include/c++/13/limits:
 
@@ -730,16 +761,6 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 /lib/x86_64-linux-gnu/libtinfo.so.6:
 
 /usr/include/c++/13/bits/fs_fwd.h:
-
-/usr/include/c++/13/bits/stream_iterator.h:
-
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/c++/13/bits/align.h:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-presentation/libsdb_cli.a:
 
 /usr/include/c++/13/bits/stl_algo.h:
 
@@ -755,9 +776,9 @@ presentation/libsdb_cli.a:
 
 /usr/include/c++/13/bits/stl_iterator.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/c++/13/bits/memory_resource.h:
 
@@ -781,14 +802,6 @@ presentation/libsdb_cli.a:
 
 /usr/include/c++/13/bits/functexcept.h:
 
-/usr/include/c++/13/compare:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/lib/i386-linux-gnu/libbsd.so.0:
-
-/usr/include/c++/13/tr1/legendre_function.tcc:
-
 /usr/include/c++/13/tr1/bessel_function.tcc:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o:
@@ -796,6 +809,8 @@ presentation/libsdb_cli.a:
 /usr/include/c++/13/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/stdio.h:
 
@@ -821,8 +836,6 @@ presentation/libsdb_cli.a:
 
 /usr/include/c++/13/bits/nested_exception.h:
 
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
 /usr/include/c++/13/bits/specfun.h:
 
 /usr/include/c++/13/bits/ostream_insert.h:
@@ -839,7 +852,19 @@ presentation/libsdb_cli.a:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
+/usr/include/c++/13/tr1/gamma.tcc:
+
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:
+
+/usr/include/c++/13/tuple:
+
+/usr/include/c++/13/tr1/legendre_function.tcc:
+
 /usr/include/c++/13/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/13/bits/uniform_int_dist.h:
+
+/usr/include/c++/13/tr1/poly_hermite.tcc:
 
 /usr/include/c++/13/tr1/poly_laguerre.tcc:
 
@@ -874,8 +899,6 @@ presentation/libsdb_cli.a:
 /usr/include/features-time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/fmt/ranges.h:
 
@@ -1051,8 +1074,6 @@ presentation/libsdb_cli.a:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
@@ -1069,6 +1090,8 @@ presentation/libsdb_cli.a:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
 
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/stoppoint_collection.hpp:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
 
 /usr/include/wctype.h:
@@ -1084,11 +1107,3 @@ presentation/libsdb_cli.a:
 /usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/sys/wait.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
-
-domain/src/libsdb.a:

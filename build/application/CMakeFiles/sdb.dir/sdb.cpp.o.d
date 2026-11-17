@@ -122,13 +122,16 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/process.hpp \
- /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
- /usr/include/c++/13/system_error \
- /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/breakpoint_site.hpp \
  /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/types.hpp \
+ /usr/include/c++/13/array /usr/include/c++/13/compare \
+ /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
+ /usr/include/c++/13/system_error \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
  /usr/include/c++/13/limits /usr/include/c++/13/ctime /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
@@ -203,13 +206,16 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/details/registers.inc \
- /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/types.hpp \
- /usr/include/c++/13/array /usr/include/c++/13/compare \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/stoppoint_collection.hpp \
+ /usr/include/fmt/core.h /usr/include/c++/13/iterator \
+ /usr/include/c++/13/bits/stream_iterator.h \
  /home/pedrofb/Desktop/Cs/CPP/sdb/application/../presentation/sdb_cli.hpp \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/application/../presentation/view/breakpoint_views.hpp \
  /home/pedrofb/Desktop/Cs/CPP/sdb/application/../presentation/view/error_views.hpp \
  /home/pedrofb/Desktop/Cs/CPP/sdb/application/../presentation/view/general_views.hpp \
  /home/pedrofb/Desktop/Cs/CPP/sdb/application/../presentation/view/register_views.hpp \
- /usr/include/editline/readline.h \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/parse.hpp \
+ /usr/include/c++/13/charconv /usr/include/editline/readline.h \
  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
@@ -247,7 +253,6 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/fmt/core.h \
- /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
  /usr/include/fmt/ranges.h /usr/include/fmt/format.h \
  /usr/include/x86_64-linux-gnu/sys/ptrace.h \
  /usr/include/x86_64-linux-gnu/bits/ptrace-shared.h \

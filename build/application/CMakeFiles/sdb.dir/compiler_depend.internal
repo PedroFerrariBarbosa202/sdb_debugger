@@ -4,15 +4,19 @@
 application/CMakeFiles/sdb.dir/sdb.cpp.o
  /home/pedrofb/Desktop/Cs/CPP/sdb/application/sdb.cpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/sdb_cli.hpp
+ /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/breakpoint_views.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/error_views.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/register_views.hpp
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/breakpoint_site.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/error.hpp
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/parse.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/stoppoint_collection.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/types.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
@@ -113,6 +117,7 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o
  /usr/include/c++/13/bits/vector.tcc
  /usr/include/c++/13/cctype
  /usr/include/c++/13/cerrno
+ /usr/include/c++/13/charconv
  /usr/include/c++/13/clocale
  /usr/include/c++/13/cmath
  /usr/include/c++/13/codecvt
