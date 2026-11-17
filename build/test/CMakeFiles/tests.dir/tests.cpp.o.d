@@ -228,6 +228,7 @@ test/CMakeFiles/tests.dir/tests.cpp.o: \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/pipe.hpp \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/process.hpp \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/breakpoint_site.hpp \
  /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
  /usr/include/c++/13/bits/fs_path.h /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h \
@@ -243,7 +244,10 @@ test/CMakeFiles/tests.dir/tests.cpp.o: \
  /usr/include/c++/13/optional \
  /usr/include/c++/13/bits/enable_special_members.h \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/registers.hpp \
- /usr/include/c++/13/variant /usr/include/c++/13/fstream \
+ /usr/include/c++/13/variant \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/stoppoint_collection.hpp \
+ /usr/include/fmt/core.h /usr/include/c++/13/iterator \
+ /usr/include/c++/13/bits/stream_iterator.h /usr/include/c++/13/fstream \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/iostream \

@@ -1,3 +1,5 @@
+#include "libsdb/breakpoint_site.hpp"
+#include <filesystem>
 #include <fmt/format.h>
 #include <libsdb/process.hpp>
 #include <sys/ptrace.h>
@@ -180,4 +182,15 @@ void sdb::process::write_gprs(const user_regs_struct &gprs) {
   if (ptrace(PTRACE_SETREGS, pid_, nullptr, &gprs) < 0) {
     error::send_errno("Could not write to heneral purpouse registers");
   }
+}
+
+/*breakpoint_site-related code*/
+sdb::breakpoint_site &sdb::process::create_breakpoint_site(virt_addr address) {
+  if (breakpoint_sites_.contains_address(address)) {
+    error::send("Breakpoint site already created at address" +
+                std::to_string(address.addr()));
+  }
+
+  return breakpoint_sites_.push(
+      std::unique_ptr<breakpoint_site>(new breakpoint_site(*this, address)));
 }

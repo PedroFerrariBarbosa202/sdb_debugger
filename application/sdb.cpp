@@ -3,6 +3,7 @@
 #include <libsdb/process.hpp>
 
 #include "../presentation/sdb_cli.hpp"
+#include <libsdb/parse.hpp>
 #include <libsdb/register_metadata.hpp>
 #include <libsdb/registers.hpp>
 
@@ -24,7 +25,8 @@ public:
   explicit sdb_debugger(sdb_cli &factory)
       : general_cli(factory.create_general_view()),
         registers_cli(factory.create_register_view()),
-        errors_cli(factory.create_error_view()) {}
+        errors_cli(factory.create_error_view()),
+        breakpoints_cli(factory.create_breakpoint_view()) {}
 
   // functions to call contrete views
   void print_help(const std::vector<std::string> &args) {
@@ -42,6 +44,10 @@ public:
 
   void print_error_message(const std::string_view str) {
     errors_cli->print_error_message(str);
+  }
+
+  void print_list_breakpoints(sdb::process &process) {
+    breakpoints_cli->print_list_breakpoints(process);
   }
 
   void print_error(const error &error) { errors_cli->print_error(error); }
@@ -88,6 +94,7 @@ private:
   std::unique_ptr<general_view> general_cli;
   std::unique_ptr<register_view> registers_cli;
   std::unique_ptr<error_view> errors_cli;
+  std::unique_ptr<breakpoint_view> breakpoints_cli;
 
   void handle_register_read(sdb::process &process,
                             const std::vector<std::string> &args) {
@@ -168,6 +175,48 @@ private:
     }
   }
 
+  void handle_breakpoint_command(sdb::process &process,
+                                 const std::vector<std::string> &args) {
+    if (args.size() < 2) {
+      print_help({"help", "breakpoint"});
+      return;
+    }
+
+    auto command = args[1];
+
+    if (sdb_cli::is_prefix(command, "list")) {
+      if (process.breakpoint_sites().empty()) {
+        print_error_message("No breakpoint set");
+      } else {
+        print_list_breakpoints(process);
+      }
+    } else if (sdb_cli::is_prefix(command, "set")) {
+      auto address = sdb::parser::to_integral<std::uint64_t>(args[2], 16);
+
+      if (!address) {
+        print_error_message("Breakpoint command expects address in "
+                            "hexadecimal, prefixed with '0x'\n");
+        return;
+      }
+
+      process.create_breakpoint_site(sdb::virt_addr{*address}).enable();
+    }
+
+    auto id = sdb::parser::to_integral<sdb::breakpoint_site::id_type>(args[2]);
+    if (!id) {
+      print_error_message("Command expects breakpoint id");
+      return;
+    }
+
+    if (sdb_cli::is_prefix(command, "enable")) {
+      process.breakpoint_sites().get_by_id(*id).enable();
+    } else if (sdb_cli::is_prefix(command, "disable")) {
+      process.breakpoint_sites().get_by_id(*id).disable();
+    } else if (sdb_cli::is_prefix(command, "delete")) {
+      process.breakpoint_sites().remove_by_id(*id);
+    }
+  }
+
   void handle_command(std::unique_ptr<sdb::process> &process,
                       std::string_view line) {
     auto args = sdb_cli::split(line, ' ');
@@ -187,6 +236,8 @@ private:
     } else if (sdb_cli::is_prefix(command, "register")) {
       // handle register operations
       handle_register_command(*process, args);
+    } else if (sdb_cli::is_prefix(command, "breakpoint")) {
+      handle_breakpoint_command(*process, args);
     } else {
       this->print_error_message("Unknown command");
     }

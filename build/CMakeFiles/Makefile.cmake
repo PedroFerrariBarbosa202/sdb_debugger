@@ -117,4 +117,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "test/targets/CMakeFiles/run_endlessly.dir/DependInfo.cmake"
   "test/targets/CMakeFiles/reg_write.dir/DependInfo.cmake"
   "test/targets/CMakeFiles/reg_read.dir/DependInfo.cmake"
+  "test/targets/CMakeFiles/hello_sdb.dir/DependInfo.cmake"
   )

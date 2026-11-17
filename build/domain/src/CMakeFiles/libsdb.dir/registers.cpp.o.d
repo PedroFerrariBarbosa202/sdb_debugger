@@ -190,6 +190,7 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/process.hpp \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/breakpoint_site.hpp \
  /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
  /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
  /usr/include/c++/13/limits /usr/include/c++/13/ctime \
@@ -206,4 +207,7 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.o: \
  /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/pipe.hpp \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/registers.hpp \
- /usr/include/c++/13/variant
+ /usr/include/c++/13/variant \
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/stoppoint_collection.hpp \
+ /usr/include/fmt/core.h /usr/include/c++/13/iterator \
+ /usr/include/c++/13/bits/stream_iterator.h

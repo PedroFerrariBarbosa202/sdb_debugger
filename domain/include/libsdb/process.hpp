@@ -1,6 +1,8 @@
 #ifndef SDB_PROCESS_HPP
 #define SDB_PROCESS_HPP
 
+#include "libsdb/breakpoint_site.hpp"
+#include "libsdb/types.hpp"
 #include <filesystem>
 #include <memory>
 #include <optional>
@@ -8,6 +10,7 @@
 
 #include <libsdb/pipe.hpp>
 #include <libsdb/registers.hpp>
+#include <libsdb/stoppoint_collection.hpp>
 
 namespace sdb {
 enum class process_state {
@@ -64,12 +67,24 @@ public:
         get_registers().read_by_id_as<std::uint64_t>(register_id::rip)};
   }
 
+  /*breakpoint_site-related code*/
+  breakpoint_site &create_breakpoint_site(virt_addr address);
+
+  stoppoint_collection<breakpoint_site> &breakpoint_sites() {
+    return breakpoint_sites_;
+  }
+  const stoppoint_collection<breakpoint_site> &breakpoint_sites() const {
+    return breakpoint_sites_;
+  }
+
 private:
   pid_t pid_ = 0;
   bool terminate_on_end_ = true;
   bool is_attached_ = true;
   process_state state_ = process_state::stopped;
   std::unique_ptr<registers> registers_;
+
+  stoppoint_collection<breakpoint_site> breakpoint_sites_;
 
   static void exit_with_perror(sdb::pipe &channel, std::string const &prefix);
 

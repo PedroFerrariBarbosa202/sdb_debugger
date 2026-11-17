@@ -1,7 +1,7 @@
 run_endlessly: \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crt1.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o \
-  /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/13/crtbegin.o \
   CMakeFiles/run_endlessly.dir/run_endlessly.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
@@ -27,15 +27,15 @@ run_endlessly: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libgcc_s.so.1 \
   /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/13/crtend.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o \
   /lib64/ld-linux-x86-64.so.2
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o:
+/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crt1.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o:
+/usr/lib/gcc/x86_64-linux-gnu/13/crtbegin.o:
 
 CMakeFiles/run_endlessly.dir/run_endlessly.cpp.o:
 
@@ -87,7 +87,7 @@ CMakeFiles/run_endlessly.dir/run_endlessly.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o:
+/usr/lib/gcc/x86_64-linux-gnu/13/crtend.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o:
 

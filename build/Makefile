@@ -626,6 +626,19 @@ reg_read/fast:
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/reg_read.dir/build.make test/targets/CMakeFiles/reg_read.dir/build
 .PHONY : reg_read/fast
 
+#=============================================================================
+# Target rules for targets named hello_sdb
+
+# Build rule for target.
+hello_sdb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_sdb
+.PHONY : hello_sdb
+
+# fast build rule for target.
+hello_sdb/fast:
+	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/hello_sdb.dir/build.make test/targets/CMakeFiles/hello_sdb.dir/build
+.PHONY : hello_sdb/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -667,6 +680,7 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
+	@echo "... hello_sdb"
 	@echo "... libsdb"
 	@echo "... reg_read"
 	@echo "... reg_write"

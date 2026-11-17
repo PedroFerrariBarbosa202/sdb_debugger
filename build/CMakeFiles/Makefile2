@@ -204,12 +204,14 @@ test/clean: test/targets/clean
 test/targets/all: test/targets/CMakeFiles/run_endlessly.dir/all
 test/targets/all: test/targets/CMakeFiles/reg_write.dir/all
 test/targets/all: test/targets/CMakeFiles/reg_read.dir/all
+test/targets/all: test/targets/CMakeFiles/hello_sdb.dir/all
 .PHONY : test/targets/all
 
 # Recursive "codegen" directory target.
 test/targets/codegen: test/targets/CMakeFiles/run_endlessly.dir/codegen
 test/targets/codegen: test/targets/CMakeFiles/reg_write.dir/codegen
 test/targets/codegen: test/targets/CMakeFiles/reg_read.dir/codegen
+test/targets/codegen: test/targets/CMakeFiles/hello_sdb.dir/codegen
 .PHONY : test/targets/codegen
 
 # Recursive "preinstall" directory target.
@@ -220,6 +222,7 @@ test/targets/preinstall:
 test/targets/clean: test/targets/CMakeFiles/run_endlessly.dir/clean
 test/targets/clean: test/targets/CMakeFiles/reg_write.dir/clean
 test/targets/clean: test/targets/CMakeFiles/reg_read.dir/clean
+test/targets/clean: test/targets/CMakeFiles/hello_sdb.dir/clean
 .PHONY : test/targets/clean
 
 #=============================================================================
@@ -1125,12 +1128,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 domain/src/CMakeFiles/libsdb.dir/all:
 	$(MAKE) $(MAKESILENT) -f domain/src/CMakeFiles/libsdb.dir/build.make domain/src/CMakeFiles/libsdb.dir/depend
 	$(MAKE) $(MAKESILENT) -f domain/src/CMakeFiles/libsdb.dir/build.make domain/src/CMakeFiles/libsdb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=1,2,3,4 "Built target libsdb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target libsdb"
 .PHONY : domain/src/CMakeFiles/libsdb.dir/all
 
 # Build rule for subdir invocation for target.
 domain/src/CMakeFiles/libsdb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 domain/src/CMakeFiles/libsdb.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 0
 .PHONY : domain/src/CMakeFiles/libsdb.dir/rule
@@ -1142,7 +1145,7 @@ libsdb: domain/src/CMakeFiles/libsdb.dir/rule
 # codegen rule for target.
 domain/src/CMakeFiles/libsdb.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f domain/src/CMakeFiles/libsdb.dir/build.make domain/src/CMakeFiles/libsdb.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target libsdb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=3,4,5,6,7 "Finished codegen for target libsdb"
 .PHONY : domain/src/CMakeFiles/libsdb.dir/codegen
 
 # clean rule for target.
@@ -1158,12 +1161,12 @@ application/CMakeFiles/sdb.dir/all: domain/src/CMakeFiles/libsdb.dir/all
 application/CMakeFiles/sdb.dir/all: presentation/CMakeFiles/sdb_cli.dir/all
 	$(MAKE) $(MAKESILENT) -f application/CMakeFiles/sdb.dir/build.make application/CMakeFiles/sdb.dir/depend
 	$(MAKE) $(MAKESILENT) -f application/CMakeFiles/sdb.dir/build.make application/CMakeFiles/sdb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=11,12 "Built target sdb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=14,15 "Built target sdb"
 .PHONY : application/CMakeFiles/sdb.dir/all
 
 # Build rule for subdir invocation for target.
 application/CMakeFiles/sdb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 application/CMakeFiles/sdb.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 0
 .PHONY : application/CMakeFiles/sdb.dir/rule
@@ -1175,7 +1178,7 @@ sdb: application/CMakeFiles/sdb.dir/rule
 # codegen rule for target.
 application/CMakeFiles/sdb.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f application/CMakeFiles/sdb.dir/build.make application/CMakeFiles/sdb.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=11,12 "Finished codegen for target sdb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=14,15 "Finished codegen for target sdb"
 .PHONY : application/CMakeFiles/sdb.dir/codegen
 
 # clean rule for target.
@@ -1190,12 +1193,12 @@ application/CMakeFiles/sdb.dir/clean:
 presentation/CMakeFiles/sdb_cli.dir/all: domain/src/CMakeFiles/libsdb.dir/all
 	$(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/depend
 	$(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=13,14,15,16,17 "Built target sdb_cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=16,17,18,19,20,21 "Built target sdb_cli"
 .PHONY : presentation/CMakeFiles/sdb_cli.dir/all
 
 # Build rule for subdir invocation for target.
 presentation/CMakeFiles/sdb_cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 presentation/CMakeFiles/sdb_cli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 0
 .PHONY : presentation/CMakeFiles/sdb_cli.dir/rule
@@ -1207,7 +1210,7 @@ sdb_cli: presentation/CMakeFiles/sdb_cli.dir/rule
 # codegen rule for target.
 presentation/CMakeFiles/sdb_cli.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=13,14,15,16,17 "Finished codegen for target sdb_cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=16,17,18,19,20,21 "Finished codegen for target sdb_cli"
 .PHONY : presentation/CMakeFiles/sdb_cli.dir/codegen
 
 # clean rule for target.
@@ -1222,12 +1225,12 @@ presentation/CMakeFiles/sdb_cli.dir/clean:
 test/CMakeFiles/tests.dir/all: domain/src/CMakeFiles/libsdb.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=18,19 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=22,23 "Built target tests"
 .PHONY : test/CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/tests.dir/rule
@@ -1239,7 +1242,7 @@ tests: test/CMakeFiles/tests.dir/rule
 # codegen rule for target.
 test/CMakeFiles/tests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/tests.dir/build.make test/CMakeFiles/tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=18,19 "Finished codegen for target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=22,23 "Finished codegen for target tests"
 .PHONY : test/CMakeFiles/tests.dir/codegen
 
 # clean rule for target.
@@ -1254,7 +1257,7 @@ test/CMakeFiles/tests.dir/clean:
 test/targets/CMakeFiles/run_endlessly.dir/all:
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/run_endlessly.dir/build.make test/targets/CMakeFiles/run_endlessly.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/run_endlessly.dir/build.make test/targets/CMakeFiles/run_endlessly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=9,10 "Built target run_endlessly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=12,13 "Built target run_endlessly"
 .PHONY : test/targets/CMakeFiles/run_endlessly.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1271,7 +1274,7 @@ run_endlessly: test/targets/CMakeFiles/run_endlessly.dir/rule
 # codegen rule for target.
 test/targets/CMakeFiles/run_endlessly.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/run_endlessly.dir/build.make test/targets/CMakeFiles/run_endlessly.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=9,10 "Finished codegen for target run_endlessly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=12,13 "Finished codegen for target run_endlessly"
 .PHONY : test/targets/CMakeFiles/run_endlessly.dir/codegen
 
 # clean rule for target.
@@ -1286,7 +1289,7 @@ test/targets/CMakeFiles/run_endlessly.dir/clean:
 test/targets/CMakeFiles/reg_write.dir/all:
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/reg_write.dir/build.make test/targets/CMakeFiles/reg_write.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/reg_write.dir/build.make test/targets/CMakeFiles/reg_write.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=7,8 "Built target reg_write"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=10,11 "Built target reg_write"
 .PHONY : test/targets/CMakeFiles/reg_write.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1303,7 +1306,7 @@ reg_write: test/targets/CMakeFiles/reg_write.dir/rule
 # codegen rule for target.
 test/targets/CMakeFiles/reg_write.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/reg_write.dir/build.make test/targets/CMakeFiles/reg_write.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=7,8 "Finished codegen for target reg_write"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=10,11 "Finished codegen for target reg_write"
 .PHONY : test/targets/CMakeFiles/reg_write.dir/codegen
 
 # clean rule for target.
@@ -1318,7 +1321,7 @@ test/targets/CMakeFiles/reg_write.dir/clean:
 test/targets/CMakeFiles/reg_read.dir/all:
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/reg_read.dir/build.make test/targets/CMakeFiles/reg_read.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/reg_read.dir/build.make test/targets/CMakeFiles/reg_read.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=5,6 "Built target reg_read"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=8,9 "Built target reg_read"
 .PHONY : test/targets/CMakeFiles/reg_read.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1335,13 +1338,45 @@ reg_read: test/targets/CMakeFiles/reg_read.dir/rule
 # codegen rule for target.
 test/targets/CMakeFiles/reg_read.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/reg_read.dir/build.make test/targets/CMakeFiles/reg_read.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=5,6 "Finished codegen for target reg_read"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=8,9 "Finished codegen for target reg_read"
 .PHONY : test/targets/CMakeFiles/reg_read.dir/codegen
 
 # clean rule for target.
 test/targets/CMakeFiles/reg_read.dir/clean:
 	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/reg_read.dir/build.make test/targets/CMakeFiles/reg_read.dir/clean
 .PHONY : test/targets/CMakeFiles/reg_read.dir/clean
+
+#=============================================================================
+# Target rules for target test/targets/CMakeFiles/hello_sdb.dir
+
+# All Build rule for target.
+test/targets/CMakeFiles/hello_sdb.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/hello_sdb.dir/build.make test/targets/CMakeFiles/hello_sdb.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/hello_sdb.dir/build.make test/targets/CMakeFiles/hello_sdb.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=1,2 "Built target hello_sdb"
+.PHONY : test/targets/CMakeFiles/hello_sdb.dir/all
+
+# Build rule for subdir invocation for target.
+test/targets/CMakeFiles/hello_sdb.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/targets/CMakeFiles/hello_sdb.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles 0
+.PHONY : test/targets/CMakeFiles/hello_sdb.dir/rule
+
+# Convenience name for target.
+hello_sdb: test/targets/CMakeFiles/hello_sdb.dir/rule
+.PHONY : hello_sdb
+
+# codegen rule for target.
+test/targets/CMakeFiles/hello_sdb.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/hello_sdb.dir/build.make test/targets/CMakeFiles/hello_sdb.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=1,2 "Finished codegen for target hello_sdb"
+.PHONY : test/targets/CMakeFiles/hello_sdb.dir/codegen
+
+# clean rule for target.
+test/targets/CMakeFiles/hello_sdb.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/hello_sdb.dir/build.make test/targets/CMakeFiles/hello_sdb.dir/clean
+.PHONY : test/targets/CMakeFiles/hello_sdb.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

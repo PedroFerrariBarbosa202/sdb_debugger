@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/libsdb.dir/breakpoint_site.cpp.o"
+  "CMakeFiles/libsdb.dir/breakpoint_site.cpp.o.d"
   "CMakeFiles/libsdb.dir/pipe.cpp.o"
   "CMakeFiles/libsdb.dir/pipe.cpp.o.d"
   "CMakeFiles/libsdb.dir/process.cpp.o"

@@ -4,12 +4,14 @@
 test/CMakeFiles/tests.dir/tests.cpp.o
  /home/pedrofb/Desktop/Cs/CPP/sdb/test/tests.cpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/bit.hpp
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/breakpoint_site.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/error.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp
+ /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/stoppoint_collection.hpp
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/types.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
@@ -96,6 +98,7 @@ test/CMakeFiles/tests.dir/tests.cpp.o
  /usr/include/c++/13/bits/stl_tempbuf.h
  /usr/include/c++/13/bits/stl_uninitialized.h
  /usr/include/c++/13/bits/stl_vector.h
+ /usr/include/c++/13/bits/stream_iterator.h
  /usr/include/c++/13/bits/streambuf.tcc
  /usr/include/c++/13/bits/streambuf_iterator.h
  /usr/include/c++/13/bits/string_view.tcc
@@ -139,6 +142,7 @@ test/CMakeFiles/tests.dir/tests.cpp.o
  /usr/include/c++/13/iosfwd
  /usr/include/c++/13/iostream
  /usr/include/c++/13/istream
+ /usr/include/c++/13/iterator
  /usr/include/c++/13/limits
  /usr/include/c++/13/locale
  /usr/include/c++/13/memory
@@ -205,6 +209,7 @@ test/CMakeFiles/tests.dir/tests.cpp.o
  /usr/include/errno.h
  /usr/include/features-time64.h
  /usr/include/features.h
+ /usr/include/fmt/core.h
  /usr/include/libintl.h
  /usr/include/linux/close_range.h
  /usr/include/linux/errno.h

@@ -1,0 +1,1 @@
+/usr/bin/c++ -no-pie -Wl,--dependency-file=CMakeFiles/hello_sdb.dir/link.d CMakeFiles/hello_sdb.dir/hello_sdb.cpp.o -o hello_sdb

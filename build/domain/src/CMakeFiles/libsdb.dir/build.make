@@ -114,11 +114,26 @@ domain/src/CMakeFiles/libsdb.dir/registers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/libsdb.dir/registers.cpp.s"
 	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/registers.cpp -o CMakeFiles/libsdb.dir/registers.cpp.s
 
+domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.o: domain/src/CMakeFiles/libsdb.dir/flags.make
+domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/breakpoint_site.cpp
+domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.o: domain/src/CMakeFiles/libsdb.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.o"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.o -MF CMakeFiles/libsdb.dir/breakpoint_site.cpp.o.d -o CMakeFiles/libsdb.dir/breakpoint_site.cpp.o -c /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/breakpoint_site.cpp
+
+domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/libsdb.dir/breakpoint_site.cpp.i"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/breakpoint_site.cpp > CMakeFiles/libsdb.dir/breakpoint_site.cpp.i
+
+domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/libsdb.dir/breakpoint_site.cpp.s"
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/breakpoint_site.cpp -o CMakeFiles/libsdb.dir/breakpoint_site.cpp.s
+
 # Object files for target libsdb
 libsdb_OBJECTS = \
 "CMakeFiles/libsdb.dir/process.cpp.o" \
 "CMakeFiles/libsdb.dir/pipe.cpp.o" \
-"CMakeFiles/libsdb.dir/registers.cpp.o"
+"CMakeFiles/libsdb.dir/registers.cpp.o" \
+"CMakeFiles/libsdb.dir/breakpoint_site.cpp.o"
 
 # External object files for target libsdb
 libsdb_EXTERNAL_OBJECTS =
@@ -126,9 +141,10 @@ libsdb_EXTERNAL_OBJECTS =
 domain/src/libsdb.a: domain/src/CMakeFiles/libsdb.dir/process.cpp.o
 domain/src/libsdb.a: domain/src/CMakeFiles/libsdb.dir/pipe.cpp.o
 domain/src/libsdb.a: domain/src/CMakeFiles/libsdb.dir/registers.cpp.o
+domain/src/libsdb.a: domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.o
 domain/src/libsdb.a: domain/src/CMakeFiles/libsdb.dir/build.make
 domain/src/libsdb.a: domain/src/CMakeFiles/libsdb.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libsdb.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pedrofb/Desktop/Cs/CPP/sdb/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libsdb.a"
 	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src && $(CMAKE_COMMAND) -P CMakeFiles/libsdb.dir/cmake_clean_target.cmake
 	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build/domain/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libsdb.dir/link.txt --verbose=$(VERBOSE)
 

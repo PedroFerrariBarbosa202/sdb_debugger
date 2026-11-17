@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/breakpoint_site.cpp" "domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.o" "gcc" "domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.o.d"
   "/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/pipe.cpp" "domain/src/CMakeFiles/libsdb.dir/pipe.cpp.o" "gcc" "domain/src/CMakeFiles/libsdb.dir/pipe.cpp.o.d"
   "/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/process.cpp" "domain/src/CMakeFiles/libsdb.dir/process.cpp.o" "gcc" "domain/src/CMakeFiles/libsdb.dir/process.cpp.o.d"
   "/home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/registers.cpp" "domain/src/CMakeFiles/libsdb.dir/registers.cpp.o" "gcc" "domain/src/CMakeFiles/libsdb.dir/registers.cpp.o.d"

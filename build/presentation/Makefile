@@ -209,6 +209,30 @@ sdb_cli.cpp.s:
 	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.s
 .PHONY : sdb_cli.cpp.s
 
+view/breakpoint_views.o: view/breakpoint_views.cpp.o
+.PHONY : view/breakpoint_views.o
+
+# target to build an object file
+view/breakpoint_views.cpp.o:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/breakpoint_views.cpp.o
+.PHONY : view/breakpoint_views.cpp.o
+
+view/breakpoint_views.i: view/breakpoint_views.cpp.i
+.PHONY : view/breakpoint_views.i
+
+# target to preprocess a source file
+view/breakpoint_views.cpp.i:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/breakpoint_views.cpp.i
+.PHONY : view/breakpoint_views.cpp.i
+
+view/breakpoint_views.s: view/breakpoint_views.cpp.s
+.PHONY : view/breakpoint_views.s
+
+# target to generate assembly for a file
+view/breakpoint_views.cpp.s:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f presentation/CMakeFiles/sdb_cli.dir/build.make presentation/CMakeFiles/sdb_cli.dir/view/breakpoint_views.cpp.s
+.PHONY : view/breakpoint_views.cpp.s
+
 view/error_views.o: view/error_views.cpp.o
 .PHONY : view/error_views.o
 
@@ -298,6 +322,9 @@ help:
 	@echo "... sdb_cli.o"
 	@echo "... sdb_cli.i"
 	@echo "... sdb_cli.s"
+	@echo "... view/breakpoint_views.o"
+	@echo "... view/breakpoint_views.i"
+	@echo "... view/breakpoint_views.s"
 	@echo "... view/error_views.o"
 	@echo "... view/error_views.i"
 	@echo "... view/error_views.s"

@@ -185,6 +185,30 @@ libsdb/fast:
 	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f domain/src/CMakeFiles/libsdb.dir/build.make domain/src/CMakeFiles/libsdb.dir/build
 .PHONY : libsdb/fast
 
+breakpoint_site.o: breakpoint_site.cpp.o
+.PHONY : breakpoint_site.o
+
+# target to build an object file
+breakpoint_site.cpp.o:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f domain/src/CMakeFiles/libsdb.dir/build.make domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.o
+.PHONY : breakpoint_site.cpp.o
+
+breakpoint_site.i: breakpoint_site.cpp.i
+.PHONY : breakpoint_site.i
+
+# target to preprocess a source file
+breakpoint_site.cpp.i:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f domain/src/CMakeFiles/libsdb.dir/build.make domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.i
+.PHONY : breakpoint_site.cpp.i
+
+breakpoint_site.s: breakpoint_site.cpp.s
+.PHONY : breakpoint_site.s
+
+# target to generate assembly for a file
+breakpoint_site.cpp.s:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f domain/src/CMakeFiles/libsdb.dir/build.make domain/src/CMakeFiles/libsdb.dir/breakpoint_site.cpp.s
+.PHONY : breakpoint_site.cpp.s
+
 pipe.o: pipe.cpp.o
 .PHONY : pipe.o
 
@@ -271,6 +295,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... libsdb"
+	@echo "... breakpoint_site.o"
+	@echo "... breakpoint_site.i"
+	@echo "... breakpoint_site.s"
 	@echo "... pipe.o"
 	@echo "... pipe.i"
 	@echo "... pipe.s"

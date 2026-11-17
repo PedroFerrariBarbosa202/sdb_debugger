@@ -68,6 +68,7 @@
 /home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/CMakeFiles/run_endlessly.dir
 /home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/CMakeFiles/reg_write.dir
 /home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/CMakeFiles/reg_read.dir
+/home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/CMakeFiles/hello_sdb.dir
 /home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/CMakeFiles/test.dir
 /home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/CMakeFiles/edit_cache.dir
 /home/pedrofb/Desktop/Cs/CPP/sdb/build/test/targets/CMakeFiles/rebuild_cache.dir

@@ -10,6 +10,7 @@ void sdb::minimal_general_view::print_help(
       quit      - Exit the program
       continue  - Resume the process
       register  - Commands for operating on registers
+      breakpoint - Commands for operating on breakpoints
 )";
   } else if (sdb::sdb_cli::is_prefix(args[1], "register")) {
     std::cerr << R"(Available commands:
@@ -18,6 +19,13 @@ void sdb::minimal_general_view::print_help(
       read all
       write <register> <value>
 )";
+  } else if (sdb::sdb_cli::is_prefix(args[1], "breakpoint")) {
+    std::cerr << R"(Available commands:
+    list
+    delete <id>
+    disable <id>
+    enable <id>
+    set <address>)";
   } else {
     std::cerr << "No help available for that command\n";
   }

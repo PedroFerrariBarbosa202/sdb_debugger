@@ -9,6 +9,7 @@
 #include <string_view>
 #include <vector>
 
+#include "view/breakpoint_views.hpp"
 #include "view/error_views.hpp"
 #include "view/general_views.hpp"
 #include "view/register_views.hpp"
@@ -23,6 +24,7 @@ public:
   virtual std::unique_ptr<general_view> create_general_view() = 0;
   virtual std::unique_ptr<register_view> create_register_view() = 0;
   virtual std::unique_ptr<error_view> create_error_view() = 0;
+  virtual std::unique_ptr<breakpoint_view> create_breakpoint_view() = 0;
 
   static bool is_prefix(std::string_view str, std::string_view of);
   static std::vector<std::string> split(std::string_view str, char delimiter);
@@ -42,6 +44,10 @@ public:
   std::unique_ptr<error_view> create_error_view() override {
     return std::make_unique<minimal_error_view>();
   }
+
+  std::unique_ptr<breakpoint_view> create_breakpoint_view() override {
+    return std::make_unique<minimal_breakpoint_view>();
+  }
 };
 
 class json_sdb_cli : public sdb_cli {
@@ -56,6 +62,10 @@ public:
 
   std::unique_ptr<error_view> create_error_view() override {
     return std::make_unique<json_error_view>();
+  }
+
+  std::unique_ptr<breakpoint_view> create_breakpoint_view() override {
+    return std::make_unique<json_breakpoint_view>();
   }
 };
 

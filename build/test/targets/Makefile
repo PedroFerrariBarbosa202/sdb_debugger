@@ -213,6 +213,44 @@ reg_read/fast:
 	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/reg_read.dir/build.make test/targets/CMakeFiles/reg_read.dir/build
 .PHONY : reg_read/fast
 
+# Convenience name for target.
+test/targets/CMakeFiles/hello_sdb.dir/rule:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/targets/CMakeFiles/hello_sdb.dir/rule
+.PHONY : test/targets/CMakeFiles/hello_sdb.dir/rule
+
+# Convenience name for target.
+hello_sdb: test/targets/CMakeFiles/hello_sdb.dir/rule
+.PHONY : hello_sdb
+
+# fast build rule for target.
+hello_sdb/fast:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/hello_sdb.dir/build.make test/targets/CMakeFiles/hello_sdb.dir/build
+.PHONY : hello_sdb/fast
+
+hello_sdb.o: hello_sdb.cpp.o
+.PHONY : hello_sdb.o
+
+# target to build an object file
+hello_sdb.cpp.o:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/hello_sdb.dir/build.make test/targets/CMakeFiles/hello_sdb.dir/hello_sdb.cpp.o
+.PHONY : hello_sdb.cpp.o
+
+hello_sdb.i: hello_sdb.cpp.i
+.PHONY : hello_sdb.i
+
+# target to preprocess a source file
+hello_sdb.cpp.i:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/hello_sdb.dir/build.make test/targets/CMakeFiles/hello_sdb.dir/hello_sdb.cpp.i
+.PHONY : hello_sdb.cpp.i
+
+hello_sdb.s: hello_sdb.cpp.s
+.PHONY : hello_sdb.s
+
+# target to generate assembly for a file
+hello_sdb.cpp.s:
+	cd /home/pedrofb/Desktop/Cs/CPP/sdb/build && $(MAKE) $(MAKESILENT) -f test/targets/CMakeFiles/hello_sdb.dir/build.make test/targets/CMakeFiles/hello_sdb.dir/hello_sdb.cpp.s
+.PHONY : hello_sdb.cpp.s
+
 reg_read.o: reg_read.s.o
 .PHONY : reg_read.o
 
@@ -266,9 +304,13 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... hello_sdb"
 	@echo "... reg_read"
 	@echo "... reg_write"
 	@echo "... run_endlessly"
+	@echo "... hello_sdb.o"
+	@echo "... hello_sdb.i"
+	@echo "... hello_sdb.s"
 	@echo "... reg_read.o"
 	@echo "... reg_write.o"
 	@echo "... run_endlessly.o"

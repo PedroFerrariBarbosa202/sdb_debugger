@@ -6,5 +6,5 @@ ASM_DEFINES =
 
 ASM_INCLUDES = 
 
-ASM_FLAGS = -pie
+ASM_FLAGS = -fno-pie -pie
 

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o"
   "CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o.d"
+  "CMakeFiles/sdb_cli.dir/view/breakpoint_views.cpp.o"
+  "CMakeFiles/sdb_cli.dir/view/breakpoint_views.cpp.o.d"
   "CMakeFiles/sdb_cli.dir/view/error_views.cpp.o"
   "CMakeFiles/sdb_cli.dir/view/error_views.cpp.o.d"
   "CMakeFiles/sdb_cli.dir/view/general_views.cpp.o"

@@ -3,12 +3,14 @@
 
 test/CMakeFiles/tests.dir/tests.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/test/tests.cpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/bit.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/breakpoint_site.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/error.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp \
+  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/stoppoint_collection.hpp \
   /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/types.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -95,6 +97,7 @@ test/CMakeFiles/tests.dir/tests.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/test/tes
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
@@ -138,6 +141,7 @@ test/CMakeFiles/tests.dir/tests.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/test/tes
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/locale \
   /usr/include/c++/13/memory \
@@ -204,6 +208,7 @@ test/CMakeFiles/tests.dir/tests.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/test/tes
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/fmt/core.h \
   /usr/include/libintl.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
@@ -378,6 +383,14 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /lib/x86_64-linux-gnu/libmvec.so.1:
 
+/lib/x86_64-linux-gnu/libc.so.6:
+
+domain/src/libsdb.a:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+
 /usr/include/c++/13/typeinfo:
 
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
@@ -428,10 +441,6 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /usr/include/c++/13/ext/concurrence.h:
 
-/usr/include/c++/13/bits/utility.h:
-
-/usr/include/catch2/internal/catch_reusable_string_stream.hpp:
-
 /usr/include/c++/13/debug/debug.h:
 
 /usr/include/c++/13/algorithm:
@@ -440,15 +449,7 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /usr/include/c++/13/filesystem:
 
-/usr/include/c++/13/stdexcept:
-
-/usr/include/c++/13/cstdlib:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
-
-/usr/include/c++/13/cerrno:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/c++/13/codecvt:
 
@@ -457,6 +458,8 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 /usr/include/c++/13/ctime:
 
 /usr/include/catch2/interfaces/catch_interfaces_enum_values_registry.hpp:
+
+/usr/include/c++/13/iterator:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
@@ -484,6 +487,8 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
+/usr/include/c++/13/bits/utility.h:
+
 /usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
@@ -499,6 +504,8 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 /usr/include/c++/13/bits/range_access.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
+
+/usr/include/catch2/internal/catch_reusable_string_stream.hpp:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
@@ -518,21 +525,15 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
+/usr/include/c++/13/system_error:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
 /usr/include/c++/13/bits/postypes.h:
-
-/usr/include/catch2/catch_timer.hpp:
-
-/usr/include/c++/13/bits/fs_path.h:
-
-/usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/x86_64-linux-gnu/sys/user.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp:
-
-/usr/include/c++/13/bits/allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
@@ -545,18 +546,6 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 /usr/include/catch2/catch_test_macros.hpp:
 
 /usr/include/c++/13/cctype:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/catch2/catch_tostring.hpp:
-
-/usr/include/c++/13/variant:
-
-/usr/include/c++/13/array:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
 
 /usr/include/catch2/benchmark/detail/catch_benchmark_stats_fwd.hpp:
 
@@ -572,33 +561,31 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/register_metadata.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/registers.hpp:
+
+/usr/include/c++/13/bits/allocator.h:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/breakpoint_site.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
 /usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/c++/13/backward/binders.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/c++/13/system_error:
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/c++/13/ext/atomicity.h:
 
-/usr/include/c++/13/bits/shared_ptr_atomic.h:
+/usr/include/c++/13/bits/fs_fwd.h:
 
-/usr/include/c++/13/bits/concept_check.h:
+/usr/include/catch2/internal/catch_config_static_analysis_support.hpp:
 
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
-
-/usr/include/c++/13/bits/memoryfwd.h:
+/usr/include/c++/13/backward/auto_ptr.h:
 
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/pipe.hpp:
 
@@ -614,15 +601,17 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /usr/include/c++/13/ios:
 
+/usr/include/c++/13/bits/stream_iterator.h:
+
+/usr/include/c++/13/bits/align.h:
+
+/usr/include/c++/13/bits/refwrap.h:
+
 /usr/include/c++/13/bits/exception_defines.h:
 
 /usr/include/c++/13/bits/functional_hash.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/c++/13/bits/stl_algo.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/c++/13/bits/string_view.tcc:
 
@@ -631,6 +620,12 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 /usr/include/c++/13/bits/stl_function.h:
 
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/details/registers.inc:
+
+/usr/include/c++/13/stdexcept:
+
+/usr/include/c++/13/cstdlib:
+
+/usr/include/fmt/core.h:
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
@@ -641,26 +636,6 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 /usr/include/c++/13/bits/algorithmfwd.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/catch2/interfaces/catch_interfaces_test_invoker.hpp:
-
-/usr/include/catch2/internal/catch_test_macro_impl.hpp:
-
-/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/types.hpp:
-
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/usr/include/c++/13/bits/allocated_ptr.h:
-
-/usr/include/c++/13/bits/locale_conv.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
 /usr/include/c++/13/cwchar:
 
@@ -678,25 +653,71 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /usr/include/c++/13/debug/assertions.h:
 
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+/usr/include/c++/13/bits/stringfwd.h:
 
-/usr/include/c++/13/ext/atomicity.h:
+/usr/include/c++/13/bits/streambuf_iterator.h:
 
-/usr/include/c++/13/bits/fs_fwd.h:
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/process.hpp:
 
-/usr/include/catch2/internal/catch_config_static_analysis_support.hpp:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/include/c++/13/bits/refwrap.h:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/usr/include/c++/13/bits/align.h:
+/usr/include/c++/13/bits/basic_ios.tcc:
 
-/usr/include/c++/13/backward/auto_ptr.h:
+/usr/include/catch2/interfaces/catch_interfaces_test_invoker.hpp:
 
-/usr/include/c++/13/bits/cxxabi_forced.h:
+/usr/include/catch2/internal/catch_test_macro_impl.hpp:
+
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/types.hpp:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/c++/13/bits/fs_path.h:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
+
+/usr/include/x86_64-linux-gnu/sys/user.h:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/c++/13/variant:
+
+/usr/include/c++/13/array:
+
+/usr/include/catch2/catch_tostring.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/bits/stl_algo.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/catch2/internal/catch_compare_traits.hpp:
 
 /usr/include/catch2/internal/catch_unique_ptr.hpp:
 
-/usr/include/catch2/internal/catch_compare_traits.hpp:
+/usr/include/c++/13/bits/cxxabi_forced.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
 
@@ -744,6 +765,8 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
 /usr/include/stdio.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
@@ -759,6 +782,14 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
 
 /usr/include/stdlib.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/usr/include/c++/13/bits/move.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
@@ -788,9 +819,7 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/c++/13/bits/move.h:
+/usr/include/catch2/catch_timer.hpp:
 
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
@@ -844,6 +873,8 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /usr/include/catch2/internal/catch_stream_end_stop.hpp:
 
+/home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/stoppoint_collection.hpp:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
@@ -855,8 +886,6 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/catch2/internal/catch_test_failure_exception.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/include/catch2/internal/catch_unique_name.hpp:
 
@@ -875,8 +904,6 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 /usr/include/features-time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/linux/close_range.h:
 
@@ -937,8 +964,6 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -1038,8 +1063,6 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
@@ -1057,11 +1080,3 @@ test/CMakeFiles/tests.dir/tests.cpp.o:
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
-
-domain/src/libsdb.a:
-
-/lib/x86_64-linux-gnu/libc.so.6:
