@@ -26,6 +26,11 @@ public:
 
   static bool is_prefix(std::string_view str, std::string_view of);
   static std::vector<std::string> split(std::string_view str, char delimiter);
+  static void set_ofstream(int fd);
+  static void restore_ofstream();
+
+private:
+  inline static int original_stderr_ = -1;
 };
 
 // concrete factory

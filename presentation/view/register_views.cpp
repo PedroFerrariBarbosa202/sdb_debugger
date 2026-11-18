@@ -4,13 +4,14 @@
 
 void sdb::minimal_register_view::print_registers(const sdb::register_info &info,
                                                  const std::string_view value) {
-  fmt::print("{}:\t{}\n", info.name, value);
+  fmt::print(stderr, "{}:\t{}\n", info.name, value);
 }
 
 void sdb::json_register_view::print_registers(const sdb::register_info &info,
                                               const std::string_view value) {
 
-  fmt::print("{{\n"
+  fmt::print(stderr,
+             "{{\n"
              "    \"{}\": \"{}\"\n"
              "}}\n",
              info.name, value);

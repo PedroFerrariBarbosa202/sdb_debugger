@@ -7,6 +7,7 @@
 #include <libsdb/registers.hpp>
 
 #include <editline/readline.h>
+#include <fcntl.h>
 #include <string>
 #include <string_view>
 #include <type_traits>
@@ -27,6 +28,10 @@ public:
         errors_cli(factory.create_error_view()) {}
 
   // functions to call contrete views
+  void print_message(const std::string_view str) {
+    general_cli->print_message(str);
+  }
+
   void print_help(const std::vector<std::string> &args) {
     general_cli->print_help(args);
   }
@@ -168,6 +173,24 @@ private:
     }
   }
 
+  void handle_set_ofstream(const std::vector<std::string> &args) {
+    if (args.size() < 2) {
+      this->print_help({"help"});
+      return;
+    }
+
+    int fd = open(args[1].c_str(), O_WRONLY | O_CREAT | O_APPEND, 0644);
+    sdb_cli::set_ofstream(fd);
+    close(fd);
+
+    print_message("Output stream changed to " + args[1] + "\n");
+  }
+
+  void handle_restore_ofstream() {
+    sdb_cli::restore_ofstream();
+    print_message("Output stream restores to STDERR_FILENO\n");
+  }
+
   void handle_command(std::unique_ptr<sdb::process> &process,
                       std::string_view line) {
     auto args = sdb_cli::split(line, ' ');
@@ -176,18 +199,34 @@ private:
     if (sdb_cli::is_prefix(command, "quit")) {
       // quit program
       exit(0);
-    } else if (sdb_cli::is_prefix(command, "continue")) {
+    }
+
+    else if (sdb_cli::is_prefix(command, "continue")) {
       // resume the process and print stop reason if necessary
       process->resume();
       auto reason = process->wait_on_signal();
       this->print_stop_reason(*process, reason);
-    } else if (sdb_cli::is_prefix(command, "help")) {
+    }
+
+    else if (sdb_cli::is_prefix(command, "help")) {
       // print command list
       this->print_help(args);
-    } else if (sdb_cli::is_prefix(command, "register")) {
+    }
+
+    else if (sdb_cli::is_prefix(command, "register")) {
       // handle register operations
       handle_register_command(*process, args);
-    } else {
+    }
+
+    else if (sdb_cli::is_prefix(command, "set_ofstream")) {
+      handle_set_ofstream(args);
+    }
+
+    else if (sdb_cli::is_prefix(command, "restore_ofstream")) {
+      handle_restore_ofstream();
+    }
+
+    else {
       this->print_error_message("Unknown command");
     }
   }
@@ -195,7 +234,7 @@ private:
 } // namespace sdb
 
 int main(int argc, const char **argv) {
-  sdb::json_sdb_cli factory;
+  sdb::minimal_sdb_cli factory;
   sdb::sdb_debugger debugger(factory);
 
   if (argc == 1) {

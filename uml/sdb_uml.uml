@@ -120,6 +120,8 @@ abstract class sdb_cli{
   + {abstract} unique_ptr<error_view> create_error_view();
   + {static} bool is_prefix();
   + {static} vector<string> split();
+  + {static} void set_ofstream();
+  + {static} void restore_ofstream();
 }
 
 class minimal_sdb_cli{
@@ -204,6 +206,8 @@ class sdb{
   - void handle_register_read();
   - void handle_register_write();
   - void handle_register_command();
+  - void handle_set_ofstream();
+  - void handle_restore_ofstream();
   - void handle_command();
 }
 sdb --> process

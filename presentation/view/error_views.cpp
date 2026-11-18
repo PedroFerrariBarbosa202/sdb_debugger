@@ -71,7 +71,7 @@ void sdb::json_error_view::print_stop_reason(const sdb::process &process,
 
 void sdb::json_error_view::print_error_message(const std::string_view &str) {
   fmt::print(stderr, R"({{
-    "message": "{}"
+    "error": "{}"
 }}
 )",
              str);
