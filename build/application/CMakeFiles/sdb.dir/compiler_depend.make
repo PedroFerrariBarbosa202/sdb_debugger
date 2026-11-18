@@ -179,6 +179,7 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/appli
   /usr/include/editline/readline.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/fmt/core.h \
@@ -187,6 +188,7 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/appli
   /usr/include/libintl.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
   /usr/include/linux/ioctl.h \
   /usr/include/locale.h \
   /usr/include/math.h \
@@ -214,6 +216,8 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/appli
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -253,6 +257,7 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/appli
   /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -260,6 +265,7 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/appli
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -289,6 +295,7 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: /home/pedrofb/Desktop/Cs/CPP/sdb/appli
   /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
@@ -369,8 +376,6 @@ application/sdb: domain/src/libsdb.a \
 
 application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
-/usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0:
-
 /usr/lib/x86_64-linux-gnu/libedit.so:
 
 /usr/lib/i386-linux-gnu/libbsd.so.0:
@@ -404,6 +409,14 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 /lib/i386-linux-gnu/libtinfo.so.6:
 
 /lib/i386-linux-gnu/libmd.so.0:
+
+presentation/libsdb_cli.a:
+
+domain/src/libsdb.a:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/c++/13/tr1/gamma.tcc:
 
@@ -496,6 +509,8 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 /usr/include/c++/13/clocale:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/linux/falloc.h:
 
 /usr/include/c++/13/bits/utility.h:
 
@@ -597,8 +612,6 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
 /home/pedrofb/Desktop/Cs/CPP/sdb/domain/include/libsdb/types.hpp:
 
 /usr/include/c++/13/bits/enable_special_members.h:
@@ -620,6 +633,8 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
 /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
 /usr/include/c++/13/bits/exception_defines.h:
 
@@ -709,6 +724,12 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
 
+/lib/i386-linux-gnu/libbsd.so.0:
+
+/usr/include/c++/13/compare:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
 /usr/include/c++/13/ios:
 
 /usr/include/x86_64-linux-gnu/asm/ioctl.h:
@@ -727,6 +748,10 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 
 /usr/include/c++/13/ext/atomicity.h:
 
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
 /lib/x86_64-linux-gnu/libtinfo.so.6:
 
 /usr/include/c++/13/bits/fs_fwd.h:
@@ -738,8 +763,6 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o:
 /usr/include/c++/13/bits/align.h:
 
 /usr/include/c++/13/backward/auto_ptr.h:
-
-presentation/libsdb_cli.a:
 
 /usr/include/c++/13/bits/stl_algo.h:
 
@@ -781,12 +804,6 @@ presentation/libsdb_cli.a:
 
 /usr/include/c++/13/bits/functexcept.h:
 
-/usr/include/c++/13/compare:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/lib/i386-linux-gnu/libbsd.so.0:
-
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
 /usr/include/c++/13/tr1/bessel_function.tcc:
@@ -810,6 +827,14 @@ presentation/libsdb_cli.a:
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
+
+/usr/include/x86_64-linux-gnu/sys/wait.h:
+
+/usr/include/stdlib.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/usr/include/c++/13/bits/requires_hosted.h:
 
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
@@ -933,8 +958,6 @@ presentation/libsdb_cli.a:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
-
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
@@ -946,6 +969,8 @@ presentation/libsdb_cli.a:
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/fcntl.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
@@ -979,9 +1004,17 @@ presentation/libsdb_cli.a:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
 
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/lib/x86_64-linux-gnu/libfmt.so.9.1.0:
+
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -990,8 +1023,6 @@ presentation/libsdb_cli.a:
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
@@ -1079,16 +1110,6 @@ presentation/libsdb_cli.a:
 
 /usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
 
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
+
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/x86_64-linux-gnu/sys/wait.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
-
-domain/src/libsdb.a:

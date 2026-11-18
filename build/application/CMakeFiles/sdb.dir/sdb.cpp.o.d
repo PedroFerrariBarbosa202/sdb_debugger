@@ -217,7 +217,12 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
  /usr/include/asm-generic/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \

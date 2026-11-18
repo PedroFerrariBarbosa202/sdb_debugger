@@ -176,13 +176,16 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: /home/pedrofb/Desktop/Cs/CPP/
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/fmt/core.h \
   /usr/include/fmt/format.h \
   /usr/include/fmt/printf.h \
   /usr/include/libintl.h \
+  /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
@@ -194,20 +197,27 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: /home/pedrofb/Desktop/Cs/CPP/
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/time.h \
+  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
   /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
   /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -217,12 +227,14 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: /home/pedrofb/Desktop/Cs/CPP/
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -230,6 +242,7 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: /home/pedrofb/Desktop/Cs/CPP/
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -252,6 +265,7 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: /home/pedrofb/Desktop/Cs/CPP/
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
@@ -262,6 +276,7 @@ presentation/CMakeFiles/sdb_cli.dir/sdb_cli.cpp.o: /home/pedrofb/Desktop/Cs/CPP/
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
@@ -1178,15 +1193,19 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
+
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
@@ -1194,15 +1213,19 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
@@ -1212,9 +1235,13 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
@@ -1222,7 +1249,13 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
 /usr/include/wctype.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/unistd.h:
 
 /usr/include/time.h:
 
@@ -1233,6 +1266,8 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 /usr/include/sched.h:
 
 /usr/include/locale.h:
+
+/usr/include/linux/close_range.h:
 
 /usr/include/c++/13/iostream:
 
@@ -1344,6 +1379,8 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/c++/13/bits/allocated_ptr.h:
 
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
 /usr/include/c++/13/tr1/hypergeometric.tcc:
 
 /usr/include/c++/13/cerrno:
@@ -1412,6 +1449,8 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/c++/13/bits/exception_defines.h:
 
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
+
 /home/pedrofb/Desktop/Cs/CPP/sdb/presentation/view/general_views.hpp:
 
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
@@ -1476,7 +1515,11 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 
 /usr/include/c++/13/bits/fs_fwd.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
 /usr/include/c++/13/ext/atomicity.h:
+
+/usr/include/fcntl.h:
 
 /usr/include/c++/13/limits:
 
@@ -1567,6 +1610,8 @@ presentation/CMakeFiles/sdb_cli.dir/view/register_views.cpp.o: /home/pedrofb/Des
 /usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/c++/13/bits/utility.h:
+
+/usr/include/linux/falloc.h:
 
 /usr/include/c++/13/bits/stl_heap.h:
 
