@@ -17,6 +17,7 @@ enum class process_state {
   terminated,
 };
 
+/*group of attributes for detailing the stop reason of a process*/
 class stop_reason {
 public:
   stop_reason(int wait_status);
@@ -36,15 +37,23 @@ public:
   process(const process &) = delete;
   process &operator=(const process &) = delete;
 
+  /*ends the running process on destruction*/
   ~process();
 
+  /*launches a process
+   * debug -> makes the child be controlled and observed by the parent
+   * stdout_replacement -> changes the file descriptor of the stdout for the
+   * child*/
   static std::unique_ptr<process>
   launch(std::filesystem::path path, bool debug = true,
          std::optional<int> stdout_replacement = std::nullopt);
 
+  /*attaches to a running process and stops it to control its execution*/
   static std::unique_ptr<process> attach(pid_t pid);
 
   void resume();
+
+  /*waits for a child to change state*/
   stop_reason wait_on_signal();
 
   pid_t pid() const { return pid_; }
@@ -54,11 +63,13 @@ public:
   registers &get_registers() { return *registers_; }
   const registers &get_registers() const { return *registers_; }
 
+  /*writes to a specific offset in the user area*/
   void write_user_area(std::size_t offset, std::uint64_t data);
 
   void write_fprs(const user_fpregs_struct &fprs);
   void write_gprs(const user_regs_struct &gprs);
 
+  /*gets the program counter (rip)*/
   virt_addr get_pc() const {
     return virt_addr{
         get_registers().read_by_id_as<std::uint64_t>(register_id::rip)};

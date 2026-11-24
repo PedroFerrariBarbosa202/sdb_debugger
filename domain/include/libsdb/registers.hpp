@@ -16,6 +16,7 @@ public:
   registers(const registers &) = delete;
   registers &operator=(const registers &) = delete;
 
+  /*variant of all possible values of a register*/
   using value =
       std::variant<std::uint8_t, std::uint16_t, std::uint32_t, std::uint64_t,
                    std::int8_t, std::int16_t, std::int32_t, std::int64_t, float,
@@ -28,10 +29,12 @@ public:
     return std::get<T>(read(register_metadata::register_info_by_id(id)));
   }
 
+  /*write to a register with specific ID*/
   void write_by_id(register_id id, value val) {
     write(register_metadata::register_info_by_id(id), val);
   }
 
+  /*get the value of a register based on its string representation*/
   static sdb::registers::value parse_register_value(sdb::register_info info,
                                                     std::string_view text);
 
@@ -39,6 +42,7 @@ private:
   friend process;
   registers(process &proc) : proc_(&proc) {}
 
+  /*cast to byte128*/
   template <class T> sdb::byte128 widen(const sdb::register_info &info, T t);
 
   user data_;

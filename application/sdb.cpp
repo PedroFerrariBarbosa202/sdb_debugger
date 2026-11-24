@@ -22,6 +22,7 @@
 namespace sdb {
 class sdb_debugger {
 public:
+  // explicit constructor
   explicit sdb_debugger(sdb_cli &factory)
       : general_cli(factory.create_general_view()),
         registers_cli(factory.create_register_view()),
@@ -52,6 +53,8 @@ public:
   void print_error(const error &error) { errors_cli->print_error(error); }
 
   // class methods
+
+  // attaches to a process or launches a new one
   std::unique_ptr<sdb::process> attach(int argc, const char **argv) {
     /*passing PID*/
     if (argc == 3 && argv[1] == std::string_view("-p")) {
@@ -63,6 +66,7 @@ public:
     }
   }
 
+  // main loop of the program
   void update_loop(std::unique_ptr<sdb::process> &process) {
     char *line = nullptr;
     while ((line = readline("sdb> ")) != nullptr) {
@@ -94,6 +98,7 @@ private:
   std::unique_ptr<register_view> registers_cli;
   std::unique_ptr<error_view> errors_cli;
 
+  // handles a call to register read
   void handle_register_read(sdb::process &process,
                             const std::vector<std::string> &args) {
     // lambda to format strings to format different data types
@@ -119,6 +124,7 @@ private:
         if (!should_print)
           continue;
 
+        // gets the register to read and prints it to screen
         auto value = process.get_registers().read(info);
         this->print_register(info, std::visit(format, value));
       }
@@ -140,6 +146,7 @@ private:
     }
   }
 
+  // handles a call to register write
   void handle_register_write(sdb::process &process,
                              const std::vector<std::string> &args) {
     if (args.size() != 4) {
@@ -148,6 +155,7 @@ private:
     }
 
     try {
+      // get register and parse the value to write into it
       auto info = sdb::register_metadata::register_info_by_name(args[2]);
       auto value = registers::parse_register_value(info, args[3]);
       process.get_registers().write(info, value);
@@ -157,9 +165,11 @@ private:
     }
   }
 
+  // delegates work to the correct handler
   void handle_register_command(sdb::process &process,
                                const std::vector<std::string> &args) {
     if (args.size() < 2) {
+      // prints the help instructions
       this->print_help({"help", "register"});
       return;
     }
@@ -173,6 +183,7 @@ private:
     }
   }
 
+  // sets the STDERR_FILENO to a different file descriptor
   void handle_set_ofstream(const std::vector<std::string> &args) {
     if (args.size() < 2) {
       this->print_help({"help"});
@@ -186,11 +197,13 @@ private:
     print_message("Output stream changed to " + args[1] + "\n");
   }
 
+  // restore the output stream to STDERR_FILENO
   void handle_restore_ofstream() {
     sdb_cli::restore_ofstream();
     print_message("Output stream restores to STDERR_FILENO\n");
   }
 
+  // delegates work to the correct command handler
   void handle_command(std::unique_ptr<sdb::process> &process,
                       std::string_view line) {
     auto args = sdb_cli::split(line, ' ');

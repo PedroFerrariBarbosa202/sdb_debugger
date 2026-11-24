@@ -13,6 +13,7 @@
 namespace sdb {
 class parser {
 public:
+  /*formats a string to an integral value*/
   template <class I>
   static std::optional<I> to_integral(std::string_view sv, int base = 10) {
     if constexpr (std::is_same_v<I, std::byte>) {
@@ -25,6 +26,7 @@ public:
     } else {
       auto begin = sv.begin();
 
+      /*if value is in hex, skip the first two indexes*/
       if (base == 16 && sv.size() > 1 && begin[0] == '0' && begin[1] == 'x') {
         begin += 2;
       }
@@ -38,6 +40,7 @@ public:
       return ret;
     }
   }
+  /*formats a value to float value*/
   template <class F> static std::optional<F> to_float(std::string_view sv) {
     F ret;
     auto result = std::from_chars(sv.begin(), sv.end(), ret);
@@ -48,6 +51,7 @@ public:
     return ret;
   }
 
+  /*parses a vector of values. Used in register readings*/
   template <std::size_t N> static auto parse_vector(std::string_view text) {
     auto invalid = [] { sdb::error::send("invalid format"); };
 

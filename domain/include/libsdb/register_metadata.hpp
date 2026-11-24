@@ -32,6 +32,7 @@ struct register_info {
 
 class register_metadata {
 public:
+  /*g_register_infos getter*/
   static inline const std::vector<register_info> &get_register_infos() {
     static const std::vector<register_info> infos(std::begin(g_register_infos),
                                                   std::end(g_register_infos));
@@ -39,6 +40,8 @@ public:
     return infos;
   }
 
+  /*different ways of getting register values
+   *all of these call the register_info_by private method*/
   static inline const register_info &register_info_by_id(register_id id) {
     return register_info_by([id](auto &i) { return i.id == id; });
   }

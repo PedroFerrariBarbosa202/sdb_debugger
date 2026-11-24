@@ -35,6 +35,9 @@ public:
     addr_ -= offset;
     return *this;
   }
+
+  /*operator overloading so the user can work with the class as if it were a
+   * regular integer*/
   bool operator==(const virt_addr &other) const { return addr_ == other.addr_; }
   bool operator!=(const virt_addr &other) const { return addr_ != other.addr_; }
   bool operator<(const virt_addr &other) const { return addr_ < other.addr_; }
