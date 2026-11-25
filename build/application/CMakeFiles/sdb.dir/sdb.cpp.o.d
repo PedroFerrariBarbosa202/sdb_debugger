@@ -46,9 +46,9 @@ application/CMakeFiles/sdb.dir/sdb.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/13/bits/std_abs.h \
+ /usr/include/c++/13/bits/std_abs.h /usr/include/c++/13/cstring \
+ /usr/include/string.h /usr/include/strings.h \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/error.hpp \
- /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/13/stdexcept /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception.h \
  /usr/include/c++/13/bits/exception_ptr.h \

@@ -1,4 +1,5 @@
 #include <cstdlib>
+#include <cstring>
 #include <libsdb/error.hpp>
 #include <libsdb/process.hpp>
 
@@ -247,8 +248,15 @@ private:
 } // namespace sdb
 
 int main(int argc, const char **argv) {
-  sdb::minimal_sdb_cli factory;
-  sdb::sdb_debugger debugger(factory);
+  std::unique_ptr<sdb::sdb_cli> factory =
+      std::make_unique<sdb::minimal_sdb_cli>();
+
+  /*change factory based on arguments*/
+  if (argc >= 3 && sdb::sdb_cli::is_prefix(argv[2], "json_view")) {
+    factory = std::make_unique<sdb::json_sdb_cli>();
+  }
+
+  sdb::sdb_debugger debugger(*factory);
 
   if (argc == 1) {
     debugger.print_error_message("No arguments given");

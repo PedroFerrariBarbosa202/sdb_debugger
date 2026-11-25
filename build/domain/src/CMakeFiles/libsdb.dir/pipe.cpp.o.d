@@ -30,11 +30,12 @@ domain/src/CMakeFiles/libsdb.dir/pipe.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/pipe.hpp \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
+ /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h \
+ /usr/include/c++/13/pstl/pstl_config.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/c++/13/bits/functexcept.h \
  /usr/include/c++/13/bits/exception_defines.h \
@@ -69,7 +70,7 @@ domain/src/CMakeFiles/libsdb.dir/pipe.cpp.o: \
  /usr/include/c++/13/backward/binders.h \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/bits/vector.tcc \
- /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
+ /usr/include/c++/13/bits/memory_resource.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /home/pedrofb/Desktop/Cs/CPP/sdb/domain/src/../include/libsdb/error.hpp \
